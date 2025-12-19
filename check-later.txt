@@ -1,0 +1,98 @@
+
+Balancing Coupling in Software Design
+Architecture for Flow
+Effective Software Architecture
+Software Architecture and Decision-Making
+Domain-Driven Design Distilled
+Functional and Concurrent Programming
+Modern Software Engineering
+Software Architecture in Practice, 4/e
+Righting Software
+Practical Object-Oriented Design, 2/e
+Serverless as a Game Changer
+The Async-First Playbook
+Principles of Web API Design
+Strategic Monoliths and Microservices
+Domain Storytelling
+Continuous Architecture in Practice
+Software Requirements Essentials
+Patterns for API Design
+Understanding Software Dynamics
+
+Software Engineering for Data Scientists
+Financial Data Engineering
+Streaming Databases
+Implementing Data Mesh
+Hands-On Differential Privacy
+Data Science: The Hard Parts
+Practical Lakehouse Architecture
+Fuzzy Data Matching with SQL
+Learning Snowflake SQL and Scripting
+Learning Data Science
+Scaling Python with Dask
+Scaling Machine Learning with Spark
+The Enterprise Data Catalog
+Scaling Python with Ray
+Essential Math for Data Science
+Data Science at the Command Line
+Data Science on AWS
+Practical Statistics for Data Scientists
+Learning SQL
+Data Science from Scratch
+
+Real-World Kanban, Second Edition
+Next-Level A/B Testing
+Creating Great Teams, Second Edition
+Guiding Star OKRs
+Business Success with Open Source
+Become a Great Engineering Leader
+The Stress Equation
+Agile Retrospectives, Second Edition
+Practical A/B Testing
+Creating Software with Modern Diagramming Techniques
+Designing Data Governance from the Ground Up
+Program Management for Open Source Projects
+Effective Remote Work
+Help Your Boss Help You
+Become an Effective Software Engineering Manager
+Fixing Your Scrum
+Software Estimation Without Guessing
+Forge Your Future with Open Source
+Create Your Successful Agile Project
+
+Black and Decker The Complete Guide to Plumbing Updated 8th Edition
+Black & Decker The Complete Guide to Carpentry for Homeowners
+Black and Decker The Complete Guide to Bathrooms 6th Edition
+Black & Decker The Complete Guide to Landscape Projects, 2nd Edition
+Black & Decker The Complete Photo Guide to Home Repair, 4th Edition
+Black & Decker The Complete Photo Guide to Treehouses 3rd Edition
+Black & Decker The Complete Guide to Masonry & Stonework, 3rd edition
+Black & Decker The Book of Home How-to, Updated 2nd Edition
+Black & Decker The Book of Home Improvement
+Black & Decker The Complete Guide to a Better Lawn
+Black & Decker The Complete Photo Guide to Home Improvement
+Black & Decker 24 Weekend Projects for Pets
+Black & Decker The Complete Guide: Build Your Kids a Treehouse
+Black & Decker The Book of Home How-To Complete Photo Guide to Home Repair
+Black & Decker The Book of Home How-To Complete Photo Guide to Outdoor Building
+Black & Decker The Complete Photo Guide Homeowner Basics
+Black & Decker The Complete Guide to Custom Shelves & Built-ins
+Black and Decker The Complete Guide to DIY Greenhouses 3rd Edition
+Black & Decker The Hardworking Home
+Black & Decker Play Structures & Backyard Fun
+Black & Decker The Complete Guide to Greenhouses & Garden Projects
+Black & Decker Small Space Workshops
+Black & Decker Carpentry Made Simple
+Black & Decker Custom Grills & Smokers
+Black & Decker The Complete Guide to Wiring
+Black & Decker Trim & Finish Carpentry
+Black & Decker The Complete Guide to Lower Midwest Gardening
+Black & Decker The Complete Guide to DIY Projects for Luxurious Living
+Black & Decker The Complete Guide to a Clutter-Free Home
+Black & Decker The Complete Guide to Northeast Gardening
+Black & Decker Readymade Home Furniture
+Black & Decker The Complete Guide to Western Plains Gardening
+Black & Decker The Complete Guide to Upper Midwest Gardening
+Black & Decker The Complete Guide to Lower South Gardening
+Black & Decker The Complete Guide to Northwest Coast Gardening
+Black & Decker The Complete Guide to Mid-Atlantic Gardening
