@@ -1,11 +1,12 @@
 # Golang Learning Projects: Build Your Mastery
 
-**35 Production-Ready Projects** | **Complete Roadmap Coverage** | **Zero to Expert**
+**54 Production-Ready Projects** | **Complete Roadmap Coverage** | **Zero to Expert**
 
-> 🎯 **Complete Coverage**: [roadmap.sh/golang](https://roadmap.sh/golang) + [roadmap.sh/system-design](https://roadmap.sh/system-design)  
-> 🚀 **From Basics to Expert**: CLI tools → Microservices → Kernel Programming → Distributed Systems  
-> ⏱️ **Realistic Timeline**: 18-24 months for complete mastery  
+> 🎯 **Complete Coverage**: [roadmap.sh/golang](https://roadmap.sh/golang) + [roadmap.sh/system-design](https://roadmap.sh/system-design)
+> 🚀 **From Basics to Expert**: CLI tools → Microservices → Kernel Programming → Distributed Systems
+> ⏱️ **Realistic Timeline**: 18-24 months for complete mastery (can focus on 20-30 core projects)
 > 💼 **Career Ready**: Build a portfolio that lands senior engineering roles
+> 📦 **Modular Learning**: Pick projects matching your career path—not all 54 are required
 
 ---
 
@@ -130,15 +131,17 @@ You're about to embark on something real. Not another tutorial hell where you co
 **The Reality:**
 - 90% of developers never build complete systems. They know syntax but freeze when faced with real problems.
 - Go powers Docker, Kubernetes, Terraform, Prometheus, and half the cloud infrastructure you use daily. Learning it isn't a hobby—it's a career investment.
-- These 35 projects mirror what companies actually need: CLI tools, REST APIs, real-time systems, databases, network services, distributed systems, and kernel-level programming.
+- These **54 projects** cover everything from CLI tools to distributed systems: REST APIs, WebSockets, databases (SQL + NoSQL), caching, message queues, microservices, Kubernetes operators, kernel programming (eBPF, FUSE), and cloud-native patterns (CQRS, Saga, Circuit Breaker).
+- You don't need all 54—focus on **20-30 projects** aligned with your career goals (backend, DevOps, systems programming, or distributed systems).
 - You'll learn production best practices including the [12-Factor App methodology](https://12factor.net/)—the industry standard for building modern, scalable, maintainable services.
+- Includes **advanced patterns**: Design Patterns (GoF + Go-specific), distributed transactions (Saga), event sourcing (CQRS), resilience patterns (Bulkhead, Circuit Breaker), and service mesh concepts (Sidecar, Strangler Fig).
 
 **What You'll Actually Gain:**
 
 *Technical Depth:*
 - **Systems thinking**: You'll understand how software actually works—not just frameworks, but TCP, HTTP, filesystems, memory, processes, distributed coordination.
 - **Production skills**: Error handling, logging, testing, performance, concurrency, observability, security—things that separate hobbyists from professionals.
-- **Tool building**: By project 5, you'll be building tools that solve your own problems. By project 15, you'll be contributing to open source. By project 30, you'll be designing architectures.
+- **Tool building**: By project 5, you'll be building tools that solve your own problems. By project 15, you'll be contributing to open source. By project 30, you'll be designing architectures at scale.
 
 *Career Impact:*
 - Go developers earn 20-40% more than average. It's in high demand and undersupplied.
@@ -148,23 +151,26 @@ You're about to embark on something real. Not another tutorial hell where you co
 **The Honest Truth:**
 - This will be hard. You'll get stuck. You'll debug for hours. You'll question if you're "smart enough."
 - That struggle is the point. Every bug you fix, every feature you implement, every concept that finally clicks—that's your brain rewiring itself to think like an engineer.
-- Most people quit at project 3. If you finish 10, you're in the top 5% of self-taught developers. If you finish all 35, you're employable at FAANG and can command senior-level compensation.
+- Most people quit at project 3. If you finish 10, you're in the top 5% of self-taught developers. If you complete 20-30 core projects aligned with your goals, you're employable at top-tier companies and can command senior-level compensation.
 
 **What Makes This Different:**
 - **No hand-holding**: You get guidance, not solutions. You'll have to think, search, experiment. That's how real skills form. (Solutions repo available at end for verification)
-- **Progressive complexity**: Starts with CLI tools, builds through web services and systems programming, culminates in distributed systems and cloud-native architectures.
+- **Progressive complexity**: Starts with CLI tools, builds through web services and systems programming, culminates in distributed systems, cloud-native architectures, and advanced patterns.
 - **Real-world focus**: Every project solves actual problems. You'll build things you can use, deploy to production, show in interviews, and be genuinely proud of.
+- **Modular path**: 54 projects covering everything from basics to expert-level distributed patterns. Pick 20-30 that align with your career goals—you don't need all of them.
 
 **A Challenge:**
 - Commit to one project per week (basic), two weeks (intermediate), month (advanced/expert), or 6 weeks (specialized).
 - Build every feature. Write comprehensive tests. Handle errors properly. Make it production-quality with observability and security.
 - When you finish project 10, you'll look back at project 1 and cringe at your old code. That's growth.
 - When you finish project 20, you'll be the developer who can build anything at the systems level.
-- When you finish all 35, you'll be the engineer companies fight to hire.
+- When you complete 30+ projects, you'll be the engineer companies fight to hire—with deep expertise in Go, distributed systems, cloud-native patterns, and production engineering.
 
 **The projects are ordered by difficulty. Start at the beginning. Don't skip. Each one teaches concepts you'll need later.**
 
 You won't become a master in 6 months. But in 12 months, you'll be dangerous. In 18-24 months, you'll be irreplaceable. In interviews, you'll confidently discuss distributed systems, performance optimization, and production war stories—because you've lived them.
+
+**The reality:** Most developers focus on 20-30 projects aligned with their career goals. That's enough to go from beginner to employable senior engineer. The full 54 projects cover specialized topics (eBPF, hypervisors, advanced patterns) that you can explore based on your interests.
 
 Now build something you can be proud of.
 
@@ -177,24 +183,28 @@ Now build something you can be proud of.
 2. Complete all **Basic projects (1-6)** in order
 3. Follow the **Foundations learning path**
 4. Move to Intermediate only after completing all Basic
+5. **Goal:** Projects 1-18 give you employable backend skills (12-18 months)
 
 ### For Experienced Developers
 1. Review the [Prerequisites Flowchart](#prerequisites-flowchart)
 2. Take the [Skill Assessment Quiz](#skill-assessment)
 3. Jump to your level, but complete prerequisite projects first
 4. Consider doing projects 23 (Testing) and 27 (Context) early
+5. **Pick 20-30 projects** aligned with your career goals from the full catalog of 54
 
 ### For Career Switchers
 1. Follow the [Backend Engineer Path](#backend-engineer-path) (Projects 1-18, 23, 27-30)
 2. Budget 12-18 months of part-time work
 3. Build a portfolio site showcasing 3-5 completed projects
 4. Focus on projects 7, 17, 28, 30 for interviews
+5. **20-25 projects** from the catalog will make you competitive
 
 ### For Systems Programmers
 1. Complete Basic and Intermediate quickly (review if needed)
-2. Focus on Advanced (19-21) and Expert (22-25) projects
-3. Add Specialized projects for production skills
-4. Deep dive into performance optimization (Project 33)
+2. Focus on Advanced (19-21) and Expert (22-30) projects
+3. Add Specialized projects (31-36) for production skills
+4. Explore Bonus projects (37-54) for deep specialization: eBPF, generics, CGO, advanced patterns
+5. **25-35 projects** will make you a systems expert
 
 ---
 
@@ -214,7 +224,7 @@ START HERE
               ↓
          BASIC COMPLETE ✓
               ↓
-         [Project 7: REST API] ← Prerequisite for most Intermediate
+         [Project 7: REST API] ← Prerequisite for most Intermediate+
               ↓
               ├→ [Project 8: WebSocket Chat]
               ├→ [Project 9: File Sync]
@@ -234,10 +244,10 @@ START HERE
               ↓
          ADVANCED COMPLETE ✓
               ↓
-         ┌─────────────────────────┐
-         │ EXPERT & SPECIALIZED    │
-         │ (Can do in any order)   │
-         └─────────────────────────┘
+         ┌─────────────────────────────────────┐
+         │ EXPERT & SPECIALIZED (22-36)        │
+         │ Pick based on career goals          │
+         └─────────────────────────────────────┘
               ↓
          ├→ [22: Design Patterns] (needs 7-18)
          ├→ [23: Testing Framework] (needs any 10 projects)
@@ -252,30 +262,43 @@ START HERE
          ├→ [32: K8s Operator] (needs 21, 28)
          ├→ [33: Profiling] (needs 7, 23)
          ├→ [34: Payments] (needs 7, 30)
-         └→ [35: Multi-Cloud] (needs 7, 9)
+         ├→ [35: Multi-Cloud] (needs 7, 9)
+         └→ [36: Reflection] (needs 7, 23)
               ↓
-         ALL COMPLETE ✓
+         ┌─────────────────────────────────────┐
+         │ BONUS PROJECTS (37-54)              │
+         │ Advanced specializations (optional) │
+         └─────────────────────────────────────┘
+              ↓
+         ├→ [37-42: Language Features] (Generics, Embed, Build Tags, CGO, Modules, Assembly)
+         ├→ [43-48: Advanced Patterns] (Saga, CQRS, Bulkhead, Sidecar, Strangler Fig, Database per Service)
+         ├→ [49-54: Extended Services] (Email, Notifications, Workflow Engine, Rate Limiter, API Gateway, Service Mesh)
+              ↓
+         COMPLETE MASTERY ✓
          YOU'RE NOW A GO EXPERT!
 ```
+
+---
 
 ### Dependency Matrix
 
 **Independent Tracks** (can learn in parallel):
-- **Web Track**: 1→4→7→8→17→18→28→30
-- **Systems Track**: 1→3→11→12→13→14→15→16→19→20→21
-- **Infrastructure Track**: 7→23→24→25→26→29→31→32
+- **Web Track**: 1→4→7→8→17→18→28→30→34
+- **Systems Track**: 1→3→11→12→13→14→15→16→19→20→21→32
+- **Infrastructure Track**: 7→23→24→25→26→29→31→32→36
 - **Optimization Track**: 23→27→33
+- **Patterns Track**: 22→37-54 (Bonus projects: advanced patterns and features)
 
 **Critical Path** (fastest to employability):
 Projects: 1, 4, 7, 17, 23, 27, 28, 30 (≈300-400 hours)
 
----
-
-## Learning Paths
-
+**Specialized Extensions** (pick based on interests):
+- **Cloud-Native**: 31→32→36 (CI/CD, K8s, Reflection)
+- **Payments/Integration**: 30→34→35 (Auth, Payments, Cloud Storage)
 ### 🎯 Backend Engineer Path
-**Goal**: Full-stack backend engineer ready for industry  
+**Goal**: Full-stack backend engineer ready for industry
 **Time**: 12-18 months part-time
+**Projects**: ~25 of 54 (focus on web track + production skills)
 
 **Phase 1**: Foundations (Months 1-2)
 - Projects 1-6 (all Basic)
@@ -300,13 +323,20 @@ Projects: 1, 4, 7, 17, 23, 27, 28, 30 (≈300-400 hours)
 - Practice system design interviews
 - Contribute to open source
 
+**Optional Extensions** (if time permits):
+- Project 22 (Design Patterns) - Architecture skills
+- Projects 43-45 (Saga, CQRS, Bulkhead) - Advanced distributed patterns
+- Project 49 (Email Service) or 52 (Workflow Engine) - Business features
+
 **Interview Focus**: Projects 7, 17, 28, 30, 26
-
----
-
+**Phase 5**: Portfolio & Interview Prep (Months 16-18)
+- Deploy 3-5 projects to production
+- Document architecture decisions
+- Practice system design interviews
 ### 🔧 Systems Programmer Path
-**Goal**: Low-level systems, infrastructure, performance  
+**Goal**: Low-level systems, infrastructure, performance
 **Time**: 15-24 months
+**Projects**: ~30 of 54 (systems + low-level features)
 
 **Phase 1**: Foundations (Months 1-2) - Projects 1-6
 
@@ -324,15 +354,15 @@ Projects: 1, 4, 7, 17, 23, 27, 28, 30 (≈300-400 hours)
 
 **Phase 5**: Production Systems (Months 19-24)
 - Projects 22 (Patterns), 26 (Load Balancer), 32 (K8s)
+- Project 36 (Reflection) - Metaprogramming
 - Contribute to systems projects (containerd, runc, etc.)
 
-**Interview Focus**: Projects 19-21, 33, deep dives into kernel/performance
-
----
-
+**Deep Dive Extensions** (months 20-24):
+- Project 40 (CGO) - Interface with C libraries
 ### ☁️ DevOps/SRE Path
-**Goal**: Cloud-native operations, reliability engineering  
+**Goal**: Cloud-native operations, reliability engineering
 **Time**: 12-18 months
+**Projects**: ~28 of 54 (infrastructure + reliability)
 
 **Phase 1**: Foundations (Months 1-2) - Projects 1-6
 
@@ -353,17 +383,17 @@ Projects: 1, 4, 7, 17, 23, 27, 28, 30 (≈300-400 hours)
 
 **Phase 5**: Production Mastery (Months 16-18)
 - Projects 25 (Caching/Rate Limiting), 30 (Auth)
+- Projects 33 (Profiling), 35 (Multi-Cloud)
 - Implement on-call runbooks
 - Chaos engineering experiments
 - Multi-region deployments
 
-**Interview Focus**: Projects 29, 31, 32, observability, incident response
-
----
-
+**Resilience Extensions** (optional):
+- Projects 43-45 (Saga, CQRS, Bulkhead) - Fault tolerance patterns
 ### 🚀 Full-Stack Path
-**Goal**: Frontend + Backend + Deployment  
+**Goal**: Frontend + Backend + Deployment
 **Time**: 15-20 months
+**Projects**: ~22 of 54 (full-stack essentials)
 
 **Phase 1**: Foundations (Months 1-2) - Projects 1-6
 
@@ -381,12 +411,47 @@ Projects: 1, 4, 7, 17, 23, 27, 28, 30 (≈300-400 hours)
 - Projects 25 (Rate Limiting), 26 (Load Balancer)
 - Deploy full-stack apps with CDN, edge
 
-**Interview Focus**: End-to-end system design, both frontend and backend
+**User-Facing Extensions** (if time permits):
+- Project 49 (Email Service) - Transactional emails
+- Project 50 (Notifications) - Real-time notifications
+- Project 53 (Rate Limiter) - API throttling for frontend
+- Project 54 (API Gateway) - Backend for frontend pattern
 
----
+**Interview Focus**: End-to-end system design, both frontend and backend, deployment strategies
+
+### 🚀 Full-Stack Path
+### 📊 Data Engineer Path
+**Goal**: Data pipelines, ETL, analytics
+**Time**: 12-16 months
+**Projects**: ~20 of 54 (data-focused)
+
+**Phase 1**: Foundations (Months 1-2) - Projects 1-6
+
+**Phase 2**: Data Processing (Months 3-7)
+- Projects 10 (Web Scraper), 12 (Log Analyzer)
+- Projects 17 (NoSQL), 18 (OpenSearch)
+- Learn Apache Kafka concepts in Project 24
+
+**Phase 3**: Pipelines & Orchestration (Months 8-12)
+- Project 24 (Message Queue - data streaming)
+- Project 9 (File Sync - data transfer)
+- Build ETL pipelines combining previous projects
+
+**Phase 4**: Infrastructure (Months 13-16)
+- Projects 25 (Caching), 31 (CI/CD for data pipelines)
+- Projects 28 (gRPC for data services)
+- Implement data warehouse patterns
+
+**Data-Specific Extensions** (optional):
+- Project 44 (CQRS) - Command Query Responsibility Segregation for analytics
+- Project 48 (Database per Service) - Microservices data patterns
+- Project 52 (Workflow Engine) - Data pipeline orchestration
+- Project 35 (Multi-Cloud Storage) - Data lake patterns
+
+**Interview Focus**: Projects 10, 12, 24, SQL optimization, streaming, CQRS patterns
 
 ### 📊 Data Engineer Path
-**Goal**: Data pipelines, ETL, analytics  
+**Goal**: Data pipelines, ETL, analytics
 **Time**: 12-16 months
 
 **Phase 1**: Foundations (Months 1-2) - Projects 1-6
@@ -438,11 +503,12 @@ Projects: 1, 4, 7, 17, 23, 27, 28, 30 (≈300-400 hours)
 - [ ] I've worked with multiple databases
 - [ ] I can debug complex performance issues
 
-### Master (Cherry-pick projects 22-35)
+### Master (Cherry-pick from projects 22-54)
 - [ ] I've built systems programming projects
 - [ ] I understand kernel interactions
 - [ ] I've designed distributed architectures
 - [ ] I contribute to major open source projects
+- [ ] I want specialized skills: Kubernetes operators, profiling, advanced patterns (CQRS, Saga, Circuit Breaker)
 
 ---
 
@@ -612,31 +678,31 @@ services:
       - "9090:9090"
     volumes:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
-  
+
   grafana:
     image: grafana/grafana:latest
     ports:
       - "3000:3000"
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=admin
-  
+
   loki:
     image: grafana/loki:latest
     ports:
       - "3100:3100"
-  
+
   jaeger:
     image: jaegertracing/all-in-one:latest
     ports:
       - "16686:16686"  # UI
       - "14268:14268"  # HTTP
       - "6831:6831/udp" # Agent
-  
+
   redis:
     image: redis:latest
     ports:
       - "6379:6379"
-  
+
   postgres:
     image: postgres:15
     ports:
@@ -644,7 +710,7 @@ services:
     environment:
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: dev_db
-  
+
   mongo:
     image: mongo:latest
     ports:
@@ -989,7 +1055,7 @@ go mod init github.com/yourusername/todo-cli
 
 **Files You'll Create:**
 - `main.go` - 100-150 lines
-- `todo.go` - 80-120 lines  
+- `todo.go` - 80-120 lines
 - `storage.go` - 40-60 lines
 - `go.mod` - Auto-generated
 - `todos.json` - Created at runtime
@@ -1166,16 +1232,16 @@ Once you've built the basic version, try adding:
 
 ### Common Gotchas to Watch For
 
-**Problem**: Changes don't persist  
-**Why**: Forgot to call `SaveToFile()` after modifications  
+**Problem**: Changes don't persist
+**Why**: Forgot to call `SaveToFile()` after modifications
 **Fix**: Always save after add/complete/delete operations
 
-**Problem**: "slice bounds out of range"  
-**Why**: Accessing slice index without checking length  
+**Problem**: "slice bounds out of range"
+**Why**: Accessing slice index without checking length
 **Fix**: Check `len(slice) > 0` before accessing, or use range loops
 
-**Problem**: JSON file gets corrupted  
-**Why**: Crash or error during write  
+**Problem**: JSON file gets corrupted
+**Why**: Crash or error during write
 **Fix**: Write to temporary file first, then rename (atomic operation):
 ```go
 tmpFile := dataFile + ".tmp"
@@ -1183,8 +1249,8 @@ os.WriteFile(tmpFile, data, 0644)
 os.Rename(tmpFile, dataFile)
 ```
 
-**Problem**: Can't find todo by ID  
-**Why**: ID generation creates duplicates or IDs don't match  
+**Problem**: Can't find todo by ID
+**Why**: ID generation creates duplicates or IDs don't match
 **Fix**: Use consistent ID generation (max ID + 1)
 
 ---
@@ -1531,10 +1597,10 @@ Create a simple HTML page with:
     <div class="container">
         <h1>🔗 URL Shortener</h1>
         <form id="shortenForm">
-            <input 
-                type="url" 
-                id="urlInput" 
-                placeholder="Enter a long URL to shorten..." 
+            <input
+                type="url"
+                id="urlInput"
+                placeholder="Enter a long URL to shorten..."
                 required
             >
             <button type="submit">Shorten URL</button>
@@ -1545,10 +1611,10 @@ Create a simple HTML page with:
     <script>
         document.getElementById('shortenForm').addEventListener('submit', async (e) => {
             e.preventDefault();
-            
+
             const url = document.getElementById('urlInput').value;
             const resultDiv = document.getElementById('result');
-            
+
             try {
                 const response = await fetch('/api/shorten', {
                     method: 'POST',
@@ -1557,9 +1623,9 @@ Create a simple HTML page with:
                     },
                     body: JSON.stringify({ url: url })
                 });
-                
+
                 const data = await response.json();
-                
+
                 if (response.ok) {
                     resultDiv.className = '';
                     resultDiv.innerHTML = `
@@ -1578,7 +1644,7 @@ Create a simple HTML page with:
                 resultDiv.style.display = 'block';
             }
         });
-        
+
         function copyToClipboard(text) {
             navigator.clipboard.writeText(text).then(() => {
                 alert('Copied to clipboard!');
@@ -1675,10 +1741,10 @@ curl http://localhost:8080/api/list
 
 ### Common Gotchas & Solutions
 
-**Problem**: Race conditions with map access  
+**Problem**: Race conditions with map access
 **Solution**: Always use mutex locks (RLock for reads, Lock for writes)
 
-**Problem**: Lost data when server restarts  
+**Problem**: Lost data when server restarts
 **Solution**: Implement persistence (save to JSON file periodically or use database)
 
 ```go
@@ -1686,17 +1752,17 @@ curl http://localhost:8080/api/list
 func (us *URLShortener) SaveToFile(filename string) error {
     us.mu.RLock()
     defer us.mu.RUnlock()
-    
+
     data, err := json.MarshalIndent(us.urls, "", "  ")
     if err != nil {
         return err
     }
-    
+
     return os.WriteFile(filename, data, 0644)
 }
 ```
 
-**Problem**: Short codes collide  
+**Problem**: Short codes collide
 **Solution**: Already handled in `Shorten()` method with collision detection
 
 ---
@@ -1870,7 +1936,7 @@ touch song1.mp3 code1.go
 - **Permissions**: Check write permissions before moving
 
 **Common Setup Issues:**
-1. **fsnotify install fails**: 
+1. **fsnotify install fails**:
    - Check Go version (need 1.16+)
    - Run `go mod tidy`
 2. **File watching doesn't work**:
@@ -2143,13 +2209,13 @@ go build -o file-organizer
 
 ### Common Gotchas
 
-**Problem**: Watcher triggers for own moves  
+**Problem**: Watcher triggers for own moves
 **Solution**: Keep track of recently moved files and ignore them
 
-**Problem**: Permission errors  
+**Problem**: Permission errors
 **Solution**: Check permissions before operations, provide clear error messages
 
-**Problem**: Infinite loops with symbolic links  
+**Problem**: Infinite loops with symbolic links
 **Solution**: Check for symlinks and handle appropriately
 
 ---
@@ -2381,13 +2447,13 @@ func GetAllProcesses() ([]ProcessInfo, error) {
 
 ### Common Gotchas
 
-**Problem**: Permission denied accessing some processes  
+**Problem**: Permission denied accessing some processes
 **Fix**: Normal behavior, skip inaccessible processes or run with elevated privileges
 
-**Problem**: CPU percentage over 100%  
+**Problem**: CPU percentage over 100%
 **Fix**: Multi-core systems can show >100% (per-core usage), divide by CPU count
 
-**Problem**: Slow updates  
+**Problem**: Slow updates
 **Fix**: Cache process info, only update changed processes
 
 ---
@@ -2531,7 +2597,7 @@ func TailFile(path string, follow bool) {
     file, _ := os.Open(path)
     // Seek to end
     file.Seek(0, io.SeekEnd)
-    
+
     for {
         // Read new lines
         // If no new lines, sleep
@@ -2553,13 +2619,13 @@ func TailFile(path string, follow bool) {
 
 ### Common Gotchas
 
-**Problem**: Memory issues with large files  
+**Problem**: Memory issues with large files
 **Fix**: Read in chunks, don't load entire file into memory
 
-**Problem**: Tail doesn't see new lines  
+**Problem**: Tail doesn't see new lines
 **Fix**: Ensure you're checking file size, handle log rotation
 
-**Problem**: Regex performance  
+**Problem**: Regex performance
 **Fix**: Compile regex once, reuse; or use string operations if possible
 
 ---
@@ -3216,17 +3282,17 @@ CREATE INDEX idx_posts_published ON posts(published);
   - Validate input
   - Create post in database
   - Return created post with 201 status
-  
+
 - `GetPosts` (GET /api/posts):
   - Parse query parameters (page, limit, published, search)
   - Query database with filters and pagination
   - Return JSON array of posts
-  
+
 - `GetPost` (GET /api/posts/{id}):
   - Extract post ID from URL
   - Query database
   - Return post or 404
-  
+
 - `UpdatePost` (PUT /api/posts/{id}):
   - Extract user ID from context
   - Find post by ID
@@ -3234,7 +3300,7 @@ CREATE INDEX idx_posts_published ON posts(published);
   - Parse update data
   - Update in database
   - Return updated post
-  
+
 - `DeletePost` (DELETE /api/posts/{id}):
   - Extract user ID
   - Check ownership
@@ -3340,19 +3406,19 @@ curl -X POST http://localhost:8080/api/posts \
 
 ### Common Gotcas
 
-**Problem**: SQL injection vulnerability  
+**Problem**: SQL injection vulnerability
 **Fix**: Always use parameterized queries with `?` placeholders
 
-**Problem**: Password stored in plain text  
+**Problem**: Password stored in plain text
 **Fix**: Use `bcrypt.GenerateFromPassword()` before storing
 
-**Problem**: JWT token never expires  
+**Problem**: JWT token never expires
 **Fix**: Set expiration claim in token, validate on each request
 
-**Problem**: Race conditions in rate limiter  
+**Problem**: Race conditions in rate limiter
 **Fix**: Use mutex or atomic operations for counter access
 
-**Problem**: Database connection leaks  
+**Problem**: Database connection leaks
 **Fix**: Always defer `rows.Close()` and `stmt.Close()`
 
 ---
@@ -4034,16 +4100,16 @@ curl -X POST http://localhost:8080/api/targets/1/test
 
 ### Common Gotchas
 
-**Problem**: Getting blocked by websites  
+**Problem**: Getting blocked by websites
 **Fix**: Rotate user agents, add delays, use proxies, respect robots.txt
 
-**Problem**: Selectors break when site changes  
+**Problem**: Selectors break when site changes
 **Fix**: Support multiple fallback selectors, send alert if extraction fails
 
-**Problem**: Memory leaks from goroutines  
+**Problem**: Memory leaks from goroutines
 **Fix**: Always close channels, use context for cancellation
 
-**Problem**: Database locks with SQLite  
+**Problem**: Database locks with SQLite
 **Fix**: Use WAL mode or switch to PostgreSQL for concurrent writes
 
 ---
@@ -4200,13 +4266,13 @@ import (
 func main() {
     ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
     defer cancel()
-    
+
     client, err := mongo.Connect(ctx, options.Client().ApplyURI("mongodb://localhost:27017"))
     if err != nil {
         log.Fatal(err)
     }
     defer client.Disconnect(ctx)
-    
+
     if err := client.Ping(ctx, nil); err != nil {
         log.Fatal(err)
     }
@@ -4230,7 +4296,7 @@ func main() {
     rdb := redis.NewClient(&redis.Options{
         Addr: "localhost:6379",
     })
-    
+
     pong, err := rdb.Ping(ctx).Result()
     if err != nil {
         panic(err)
@@ -4584,22 +4650,22 @@ nosql-app/
 
 ### Common Gotchas
 
-**Problem**: MongoDB connection timeout  
+**Problem**: MongoDB connection timeout
 **Fix**: Check MongoDB is running, firewall settings, connection string
 
-**Problem**: Redis connection refused  
+**Problem**: Redis connection refused
 **Fix**: Check Redis is running, use correct port (6379)
 
-**Problem**: Cache stampede (thundering herd)  
+**Problem**: Cache stampede (thundering herd)
 **Fix**: Use lock/mutex when populating cache
 
-**Problem**: Stale cache after updates  
+**Problem**: Stale cache after updates
 **Fix**: Invalidate cache on write operations
 
-**Problem**: Memory issues with large MongoDB results  
+**Problem**: Memory issues with large MongoDB results
 **Fix**: Use cursors with batching, pagination
 
-**Problem**: Redis memory full  
+**Problem**: Redis memory full
 **Fix**: Set maxmemory, configure eviction policy
 
 ---
@@ -4743,13 +4809,13 @@ func main() {
     if err != nil {
         panic(err)
     }
-    
+
     res, err := client.Info()
     if err != nil {
         panic(err)
     }
     defer res.Body.Close()
-    
+
     fmt.Println("OpenSearch connection successful!")
 }
 EOF
@@ -5046,22 +5112,22 @@ search-app/
 
 ### Common Gotchas
 
-**Problem**: Connection refused  
+**Problem**: Connection refused
 **Fix**: Ensure OpenSearch/Elasticsearch is running, check port (9200)
 
-**Problem**: Mapping conflicts  
+**Problem**: Mapping conflicts
 **Fix**: Can't change existing field types, need to reindex
 
-**Problem**: Too many results  
+**Problem**: Too many results
 **Fix**: Use pagination, increase page size limit if needed
 
-**Problem**: Slow queries  
+**Problem**: Slow queries
 **Fix**: Add filters (faster than queries), use caching, optimize mappings
 
-**Problem**: Memory issues  
+**Problem**: Memory issues
 **Fix**: Increase JVM heap size in OpenSearch config
 
-**Problem**: Inaccurate autocomplete  
+**Problem**: Inaccurate autocomplete
 **Fix**: Tune edge_ngram settings, use phrase suggestions
 
 ---
@@ -5132,13 +5198,13 @@ search-app/
 **System Requirements:**
 - **OS**: macOS, Linux, Windows (fsnotify works on all)
 - **RAM**: 4GB minimum (8GB for large file syncing)
-- **Disk**: 
+- **Disk**:
   - 1GB+ free space for testing
   - SSD recommended for better performance
-- **Network**: 
+- **Network**:
   - LAN access for machine-to-machine sync
   - Stable connection for cloud sync
-- **Filesystem**: 
+- **Filesystem**:
   - UNIX permissions understanding (macOS/Linux)
   - Windows ACL knowledge (Windows)
 
@@ -5246,7 +5312,7 @@ func main() {
         log.Fatal(err)
     }
     defer watcher.Close()
-    
+
     go func() {
         for {
             select {
@@ -5257,7 +5323,7 @@ func main() {
             }
         }
     }()
-    
+
     err = watcher.Add(".")
     if err != nil {
         log.Fatal(err)
@@ -5297,12 +5363,12 @@ func hashFile(path string) (string, error) {
         return "", err
     }
     defer f.Close()
-    
+
     h := sha256.New()
     if _, err := io.Copy(h, f); err != nil {
         return "", err
     }
-    
+
     return hex.EncodeToString(h.Sum(nil)), nil
 }
 
@@ -5310,14 +5376,14 @@ func main() {
     // Create test file
     data := make([]byte, 10*1024*1024) // 10MB
     os.WriteFile("testfile.bin", data, 0644)
-    
+
     start := time.Now()
     hash, err := hashFile("testfile.bin")
     if err != nil {
         panic(err)
     }
     fmt.Printf("Hash: %s (took %v)\n", hash[:16], time.Since(start))
-    
+
     os.Remove("testfile.bin")
 }
 EOF
@@ -5342,7 +5408,7 @@ func main() {
     }
     defer ln.Close()
     fmt.Println("Server listening on :8080")
-    
+
     conn, err := ln.Accept()
     if err != nil {
         panic(err)
@@ -5545,7 +5611,7 @@ for {
 }
 
 // Ignore temp files
-if strings.HasSuffix(path, ".swp") || 
+if strings.HasSuffix(path, ".swp") ||
    strings.HasSuffix(path, "~") ||
    strings.HasPrefix(filepath.Base(path), ".") {
     continue  // Skip
@@ -5797,19 +5863,19 @@ go get github.com/klauspost/compress/zstd  # Compression
 
 ### Common Gotchas
 
-**Problem**: Race condition when file changes during hashing  
+**Problem**: Race condition when file changes during hashing
 **Fix**: Copy file to temp location, then hash
 
-**Problem**: Running out of memory with large files  
+**Problem**: Running out of memory with large files
 **Fix**: Stream files in chunks, don't load entirely into memory
 
-**Problem**: Symlink loops causing infinite recursion  
+**Problem**: Symlink loops causing infinite recursion
 **Fix**: Track visited inodes, skip symlinks, or limit depth
 
-**Problem**: Partial writes leaving corrupted files  
+**Problem**: Partial writes leaving corrupted files
 **Fix**: Write to temp file, then atomic rename
 
-**Problem**: Network interruption mid-transfer  
+**Problem**: Network interruption mid-transfer
 **Fix**: Track transferred chunks, resume from last chunk
 
 ---
@@ -5818,14 +5884,14 @@ go get github.com/klauspost/compress/zstd  # Compression
 
 After these three intermediate projects, you'll have learned:
 
-✅ Database integration and SQL  
-✅ Authentication and authorization (JWT)  
-✅ API design and middleware patterns  
-✅ Concurrent programming patterns  
-✅ Network protocols and communication  
-✅ File system operations and monitoring  
-✅ Error handling and retry logic  
-✅ Production-ready code structure  
+✅ Database integration and SQL
+✅ Authentication and authorization (JWT)
+✅ API design and middleware patterns
+✅ Concurrent programming patterns
+✅ Network protocols and communication
+✅ File system operations and monitoring
+✅ Error handling and retry logic
+✅ Production-ready code structure
 
 ---
 
@@ -5958,11 +6024,11 @@ func main() {
         fmt.Print("myshell> ")
         input, _ := reader.ReadString('\n')
         input = strings.TrimSpace(input)
-        
+
         if input == "exit" {
             break
         }
-        
+
         // Execute command
     }
 }
@@ -6023,24 +6089,24 @@ func changeDirBuiltin(args []string) error {
 ```go
 func executePipeline(commands [][]string) error {
     // commands = [["ls", "-l"], ["grep", "go"], ["wc", "-l"]]
-    
+
     var cmds []*exec.Cmd
     for _, cmdParts := range commands {
         cmd := exec.Command(cmdParts[0], cmdParts[1:]...)
         cmds = append(cmds, cmd)
     }
-    
+
     // Connect pipes
     for i := 0; i < len(cmds)-1; i++ {
         stdout, _ := cmds[i].StdoutPipe()
         cmds[i+1].Stdin = stdout
     }
-    
+
     // Start all commands
     for _, cmd := range cmds {
         cmd.Start()
     }
-    
+
     // Wait for all
     for _, cmd := range cmds {
         cmd.Wait()
@@ -6128,16 +6194,16 @@ if strings.HasSuffix(cmdLine, "&") {
 
 ### Common Gotchas
 
-**Problem**: `cd` doesn't work  
+**Problem**: `cd` doesn't work
 **Fix**: Must be built-in, can't be external command
 
-**Problem**: Pipes hang  
+**Problem**: Pipes hang
 **Fix**: Close pipe writers after writing, ensure all goroutines finish
 
-**Problem**: Ctrl+C exits shell  
+**Problem**: Ctrl+C exits shell
 **Fix**: Set up signal handler, only kill foreground process
 
-**Problem**: Can't find commands in PATH  
+**Problem**: Can't find commands in PATH
 **Fix**: Use `exec.LookPath()` to search PATH
 
 ---
@@ -6253,7 +6319,7 @@ func listInterfaces() {
     if err != nil {
         log.Fatal(err)
     }
-    
+
     for i, device := range devices {
         fmt.Printf("%d. %s\n", i+1, device.Name)
         for _, addr := range device.Addresses {
@@ -6273,7 +6339,7 @@ func capturePackets(device string) {
         log.Fatal(err)
     }
     defer handle.Close()
-    
+
     packetSource := gopacket.NewPacketSource(handle, handle.LinkType())
     for packet := range packetSource.Packets() {
         fmt.Println(packet)
@@ -6293,19 +6359,19 @@ func analyzePacket(packet gopacket.Packet) {
         eth, _ := ethLayer.(*layers.Ethernet)
         fmt.Printf("Src MAC: %s, Dst MAC: %s\n", eth.SrcMAC, eth.DstMAC)
     }
-    
+
     // IP layer
     if ipLayer := packet.Layer(layers.LayerTypeIPv4); ipLayer != nil {
         ip, _ := ipLayer.(*layers.IPv4)
         fmt.Printf("Src IP: %s, Dst IP: %s\n", ip.SrcIP, ip.DstIP)
     }
-    
+
     // TCP layer
     if tcpLayer := packet.Layer(layers.LayerTypeTCP); tcpLayer != nil {
         tcp, _ := tcpLayer.(*layers.TCP)
         fmt.Printf("Src Port: %d, Dst Port: %d\n", tcp.SrcPort, tcp.DstPort)
     }
-    
+
     // Application data
     if appLayer := packet.ApplicationLayer(); appLayer != nil {
         payload := appLayer.Payload()
@@ -6348,16 +6414,16 @@ handle.SetBPFFilter("tcp port 80 or tcp port 443")
 
 ### Common Gotchas
 
-**Problem**: Permission denied  
+**Problem**: Permission denied
 **Fix**: Run with `sudo` (Linux/macOS) or as Administrator (Windows)
 
-**Problem**: No devices found  
+**Problem**: No devices found
 **Fix**: Install libpcap/WinPcap/Npcap
 
-**Problem**: Packets being dropped  
+**Problem**: Packets being dropped
 **Fix**: Increase buffer size, use BPF filters to reduce load
 
-**Problem**: Can't see other devices' traffic  
+**Problem**: Can't see other devices' traffic
 **Fix**: Need promiscuous mode and hub/mirror port (switches isolate traffic)
 
 ---
@@ -7199,19 +7265,19 @@ sudo ./myruntime rm <container-id>
 
 ### Common Gotchas
 
-**Problem**: "Operation not permitted" errors  
+**Problem**: "Operation not permitted" errors
 **Fix**: Must run as root; check capabilities with `capsh --print`
 
-**Problem**: Can't mount overlayfs  
+**Problem**: Can't mount overlayfs
 **Fix**: Ensure kernel has overlay module: `modprobe overlay`
 
-**Problem**: Containers can't access network  
+**Problem**: Containers can't access network
 **Fix**: Enable IP forwarding: `echo 1 > /proc/sys/net/ipv4/ip_forward`
 
-**Problem**: Namespace cleanup fails  
+**Problem**: Namespace cleanup fails
 **Fix**: Kill all processes in namespace first, then unmount
 
-**Problem**: Cgroup operations fail  
+**Problem**: Cgroup operations fail
 **Fix**: Check if cgroup v2 is mounted: `mount | grep cgroup2`
 
 ---
@@ -7563,10 +7629,10 @@ func main() {
         return
     }
     defer conn.Close()
-    
+
     // Send PING
     conn.Write([]byte("*1\r\n$4\r\nPING\r\n"))
-    
+
     // Read response
     buf := make([]byte, 1024)
     conn.SetReadDeadline(time.Now().Add(2 * time.Second))
@@ -8125,19 +8191,19 @@ Arrays: *2\r\n$3\r\nfoo\r\n$3\r\nbar\r\n
 
 ### Common Gotchas
 
-**Problem**: Race conditions in concurrent access  
+**Problem**: Race conditions in concurrent access
 **Fix**: Use mutexes or lock-free structures; test with `-race` flag
 
-**Problem**: Memory leaks from expired keys  
+**Problem**: Memory leaks from expired keys
 **Fix**: Implement active expiration in background goroutine
 
-**Problem**: Replication falls behind  
+**Problem**: Replication falls behind
 **Fix**: Use buffered channels, monitor lag, implement backpressure
 
-**Problem**: AOF file grows too large  
+**Problem**: AOF file grows too large
 **Fix**: Implement AOF rewriting to compact
 
-**Problem**: Cluster split-brain after network partition  
+**Problem**: Cluster split-brain after network partition
 **Fix**: Implement quorum-based voting for cluster decisions
 
 ---
@@ -8532,11 +8598,11 @@ import (
 func main() {
     target, _ := url.Parse("http://localhost:8081")
     proxy := httputil.NewSingleHostReverseProxy(target)
-    
+
     http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
         proxy.ServeHTTP(w, r)
     })
-    
+
     fmt.Println("Proxy listening on :8080")
     log.Fatal(http.ListenAndServe(":8080", nil))
 }
@@ -9197,19 +9263,19 @@ kill -HUP $(pgrep lb)
 
 ### Common Gotchas
 
-**Problem**: Connection pool exhaustion  
+**Problem**: Connection pool exhaustion
 **Fix**: Configure `MaxIdleConns` and `IdleConnTimeout` appropriately
 
-**Problem**: WebSocket connections break after timeout  
+**Problem**: WebSocket connections break after timeout
 **Fix**: Don't apply HTTP timeouts to WebSocket connections
 
-**Problem**: Health checks overwhelm backends  
+**Problem**: Health checks overwhelm backends
 **Fix**: Adjust check interval, stagger checks across backends
 
-**Problem**: Memory leak from goroutines  
+**Problem**: Memory leak from goroutines
 **Fix**: Ensure all goroutines have exit conditions, use context cancellation
 
-**Problem**: Uneven load distribution  
+**Problem**: Uneven load distribution
 **Fix**: Implement weighted algorithms, consider backend capacity
 
 ---
@@ -9218,12 +9284,12 @@ kill -HUP $(pgrep lb)
 
 After completing these advanced projects, you'll understand:
 
-✅ Operating system internals (namespaces, cgroups, syscalls)  
-✅ Distributed systems patterns (replication, sharding, consensus)  
-✅ High-performance data structures and algorithms  
-✅ Network programming and custom protocols  
-✅ Production-grade error handling and resilience  
-✅ Observability and monitoring  
+✅ Operating system internals (namespaces, cgroups, syscalls)
+✅ Distributed systems patterns (replication, sharding, consensus)
+✅ High-performance data structures and algorithms
+✅ Network programming and custom protocols
+✅ Production-grade error handling and resilience
+✅ Observability and monitoring
 ✅ Systems design and architecture
 
 ---
@@ -9323,14 +9389,14 @@ func main() {
     root := &MemFS{
         files: make(map[string]*MemFile),
     }
-    
+
     server, _ := fs.Mount("/tmp/myfs", root, &fs.Options{
         MountOptions: fuse.MountOptions{
             Name:  "myfs",
             Debug: true,
         },
     })
-    
+
     server.Wait()
 }
 ```
@@ -9471,7 +9537,7 @@ int trace_openat(void *ctx) {
     e.pid = bpf_get_current_pid_tgid() >> 32;
     e.ts = bpf_ktime_get_ns();
     bpf_get_current_comm(&e.comm, sizeof(e.comm));
-    
+
     bpf_perf_event_output(ctx, &events, BPF_F_CURRENT_CPU, &e, sizeof(e));
     return 0;
 }
@@ -9499,27 +9565,27 @@ func main() {
         panic(err)
     }
     defer objs.Close()
-    
+
     // Attach to tracepoint
     tp, err := link.Tracepoint("syscalls", "sys_enter_openat", objs.TraceOpenat, nil)
     if err != nil {
         panic(err)
     }
     defer tp.Close()
-    
+
     // Read events
     rd, err := perf.NewReader(objs.Events, 4096)
     if err != nil {
         panic(err)
     }
     defer rd.Close()
-    
+
     for {
         record, err := rd.Read()
         if err != nil {
             continue
         }
-        
+
         // Parse event struct
         // Process event...
     }
@@ -9573,16 +9639,16 @@ sudo ./ebpf-tracer
 
 ### Common Gotchas
 
-**Problem**: Permission denied  
+**Problem**: Permission denied
 **Fix**: Need root and `CAP_BPF` capability
 
-**Problem**: eBPF verifier rejection  
+**Problem**: eBPF verifier rejection
 **Fix**: eBPF has restrictions (no unbounded loops, limited instructions)
 
-**Problem**: Can't compile eBPF  
+**Problem**: Can't compile eBPF
 **Fix**: Need clang/llvm, Linux headers
 
-**Problem**: Map full  
+**Problem**: Map full
 **Fix**: Increase map size or use LRU maps
 
 ### Learning Resources
@@ -9719,13 +9785,13 @@ func openKVM() (int, error) {
     if err != nil {
         return 0, err
     }
-    
+
     // Check KVM API version
     version, _, _ := unix.Syscall(unix.SYS_IOCTL, uintptr(fd), KVM_GET_API_VERSION, 0)
     if version != 12 {
         return 0, fmt.Errorf("unsupported KVM API version: %d", version)
     }
-    
+
     return fd, nil
 }
 ```
@@ -9763,7 +9829,7 @@ func setMemory(vmFD int, size uint64) ([]byte, error) {
     if err != nil {
         return nil, err
     }
-    
+
     // Tell KVM about this memory region
     region := kvmUserspaceMemoryRegion{
         slot:          0,
@@ -9772,12 +9838,12 @@ func setMemory(vmFD int, size uint64) ([]byte, error) {
         memorySize:    size,
         userspaceAddr: uint64(uintptr(unsafe.Pointer(&mem[0]))),
     }
-    
+
     _, _, errno := unix.Syscall(unix.SYS_IOCTL, uintptr(vmFD), KVM_SET_USER_MEMORY_REGION, uintptr(unsafe.Pointer(&region)))
     if errno != 0 {
         return nil, errno
     }
-    
+
     return mem, nil
 }
 ```
@@ -9807,7 +9873,7 @@ func runVCPU(vcpuFD int) error {
         if errno != 0 {
             return errno
         }
-        
+
         // Handle VM exit
         // Check exit reason from kvm_run structure
         // Handle I/O, MMIO, HLT, etc.
@@ -9877,16 +9943,16 @@ func runVCPU(vcpuFD int) error {
 
 ### Common Gotchas
 
-**Problem**: /dev/kvm not found  
+**Problem**: /dev/kvm not found
 **Fix**: Load KVM kernel module, check virtualization enabled in BIOS
 
-**Problem**: VM crashes immediately  
+**Problem**: VM crashes immediately
 **Fix**: Ensure guest memory is set up correctly, CPU state initialized
 
-**Problem**: Guest hangs  
+**Problem**: Guest hangs
 **Fix**: Check interrupt handling, device emulation
 
-**Problem**: Slow performance  
+**Problem**: Slow performance
 **Fix**: Ensure using hardware virtualization (not emulation)
 
 ---
@@ -10564,18 +10630,18 @@ func Load() *Config {
 func main() {
     cfg := config.Load()
     server := &http.Server{Addr: ":" + cfg.Port, Handler: handler}
-    
+
     go func() {
         if err := server.ListenAndServe(); err != nil && err != http.ErrServerClosed {
             log.Fatal(err)
         }
     }()
-    
+
     // Wait for interrupt
     sigChan := make(chan os.Signal, 1)
     signal.Notify(sigChan, os.Interrupt, syscall.SIGTERM)
     <-sigChan
-    
+
     // Graceful shutdown
     ctx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
     defer cancel()
@@ -12953,20 +13019,20 @@ ci-cd-pipeline/
 ```groovy
 pipeline {
     agent any
-    
+
     environment {
         DOCKER_REGISTRY = 'docker.io'
         IMAGE_NAME = 'myapp'
         GO_VERSION = '1.21'
     }
-    
+
     stages {
         stage('Checkout') {
             steps {
                 checkout scm
             }
         }
-        
+
         stage('Test') {
             steps {
                 sh '''
@@ -12975,25 +13041,25 @@ pipeline {
                 '''
             }
         }
-        
+
         stage('Lint') {
             steps {
                 sh 'golangci-lint run ./...'
             }
         }
-        
+
         stage('Security Scan') {
             steps {
                 sh 'gosec ./...'
             }
         }
-        
+
         stage('Build') {
             steps {
                 sh 'go build -o app .'
             }
         }
-        
+
         stage('Docker Build') {
             steps {
                 script {
@@ -13001,7 +13067,7 @@ pipeline {
                 }
             }
         }
-        
+
         stage('Docker Push') {
             when {
                 branch 'main'
@@ -13015,7 +13081,7 @@ pipeline {
                 }
             }
         }
-        
+
         stage('Deploy to Staging') {
             when {
                 branch 'main'
@@ -13024,7 +13090,7 @@ pipeline {
                 sh './scripts/deploy.sh staging'
             }
         }
-        
+
         stage('Deploy to Production') {
             when {
                 tag 'v*'
@@ -13035,7 +13101,7 @@ pipeline {
             }
         }
     }
-    
+
     post {
         always {
             junit '**/test-results/*.xml'
@@ -13673,13 +13739,13 @@ func ProcessWebhook(eventID string, event stripe.Event) error {
     if redis.Exists("webhook:" + eventID) {
         return nil // Already handled
     }
-    
+
     // Process event
     err := handleEvent(event)
     if err != nil {
         return err
     }
-    
+
     // Mark as processed
     redis.Set("webhook:"+eventID, "1", 24*time.Hour)
     return nil
@@ -14026,7 +14092,7 @@ func InspectType(v interface{}) {
     t := reflect.TypeOf(v)
     fmt.Printf("Type: %v\n", t)
     fmt.Printf("Kind: %v\n", t.Kind())
-    
+
     if t.Kind() == reflect.Struct {
         for i := 0; i < t.NumField(); i++ {
             field := t.Field(i)
@@ -14034,7 +14100,7 @@ func InspectType(v interface{}) {
                 field.Name, field.Type, field.Tag)
         }
     }
-    
+
     for i := 0; i < t.NumMethod(); i++ {
         method := t.Method(i)
         fmt.Printf("  Method: %s\n", method.Name)
@@ -14055,7 +14121,7 @@ type User struct {
 func ParseValidationRules(v interface{}) map[string][]string {
     t := reflect.TypeOf(v)
     rules := make(map[string][]string)
-    
+
     for i := 0; i < t.NumField(); i++ {
         field := t.Field(i)
         tag := field.Tag.Get("validate")
@@ -14074,22 +14140,22 @@ func ParseValidationRules(v interface{}) map[string][]string {
 func StructToMap(v interface{}) map[string]interface{} {
     result := make(map[string]interface{})
     val := reflect.ValueOf(v)
-    
+
     if val.Kind() == reflect.Ptr {
         val = val.Elem()
     }
-    
+
     typ := val.Type()
     for i := 0; i < val.NumField(); i++ {
         field := typ.Field(i)
         value := val.Field(i)
-        
+
         // Use json tag if present
         name := field.Tag.Get("json")
         if name == "" {
             name = field.Name
         }
-        
+
         result[name] = value.Interface()
     }
     return result
@@ -14103,26 +14169,26 @@ func StructToMap(v interface{}) map[string]interface{} {
 func CallMethod(obj interface{}, methodName string, args ...interface{}) ([]interface{}, error) {
     val := reflect.ValueOf(obj)
     method := val.MethodByName(methodName)
-    
+
     if !method.IsValid() {
         return nil, fmt.Errorf("method %s not found", methodName)
     }
-    
+
     // Convert args to reflect.Value
     in := make([]reflect.Value, len(args))
     for i, arg := range args {
         in[i] = reflect.ValueOf(arg)
     }
-    
+
     // Call method
     results := method.Call(in)
-    
+
     // Convert results back
     out := make([]interface{}, len(results))
     for i, result := range results {
         out[i] = result.Interface()
     }
-    
+
     return out, nil
 }
 ```
@@ -14597,10 +14663,10 @@ var logoPNG []byte
 
 func main() {
     fmt.Println("Version:", version)
-    
+
     var config Config
     json.Unmarshal(configJSON, &config)
-    
+
     // Serve logo
     http.HandleFunc("/logo.png", func(w http.ResponseWriter, r *http.Request) {
         w.Header().Set("Content-Type", "image/png")
@@ -14627,10 +14693,10 @@ var migrations embed.FS
 func main() {
     // Serve static files
     http.Handle("/static/", http.FileServer(http.FS(staticFiles)))
-    
+
     // Parse templates
     tmpl, _ := template.ParseFS(templates, "templates/*.html")
-    
+
     // Read migrations
     files, _ := migrations.ReadDir("migrations")
     for _, file := range files {
@@ -14650,27 +14716,27 @@ var frontend embed.FS
 func main() {
     // Strip "frontend/dist" prefix
     stripped, _ := fs.Sub(frontend, "frontend/dist")
-    
+
     // Serve at root
     http.Handle("/", http.FileServer(http.FS(stripped)))
-    
+
     // SPA fallback
     http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
         path := r.URL.Path
         if path == "/" {
             path = "index.html"
         }
-        
+
         data, err := stripped.Open(path)
         if err != nil {
             // Fallback to index.html for SPA routing
             data, _ = stripped.Open("index.html")
         }
         defer data.Close()
-        
+
         io.Copy(w, data)
     })
-    
+
     http.ListenAndServe(":8080", nil)
 }
 ```
@@ -14693,26 +14759,26 @@ func LoadMigrations() ([]Migration, error) {
     if err != nil {
         return nil, err
     }
-    
+
     var migrations []Migration
     for _, file := range files {
         // Parse: 001_create_users.sql
         parts := strings.Split(file.Name(), "_")
         version, _ := strconv.Atoi(parts[0])
-        
+
         content, _ := migrationsFS.ReadFile("migrations/" + file.Name())
-        
+
         migrations = append(migrations, Migration{
             Version: version,
             Name:    strings.TrimSuffix(parts[1], ".sql"),
             SQL:     string(content),
         })
     }
-    
+
     sort.Slice(migrations, func(i, j int) bool {
         return migrations[i].Version < migrations[j].Version
     })
-    
+
     return migrations, nil
 }
 
@@ -15228,7 +15294,7 @@ import "fmt"
 
 func main() {
     C.hello()
-    
+
     result := C.add(10, 20)
     fmt.Printf("10 + 20 = %d\n", result)
 }
@@ -15258,15 +15324,15 @@ func Concat(a, b string) string {
     // Convert Go strings to C strings
     ca := C.CString(a)
     cb := C.CString(b)
-    
+
     // Free C strings when done
     defer C.free(unsafe.Pointer(ca))
     defer C.free(unsafe.Pointer(cb))
-    
+
     // Call C function
     result := C.concat(ca, cb)
     defer C.free(unsafe.Pointer(result))
-    
+
     // Convert C string back to Go
     return C.GoString(result)
 }
@@ -15329,7 +15395,7 @@ func (a *IntArray) Get(index int) int {
 func main() {
     arr := NewIntArray(10)
     defer arr.Free()
-    
+
     arr.Set(0, 42)
     val := arr.Get(0)
     fmt.Println(val)  // 42
@@ -15360,13 +15426,13 @@ type DB struct {
 func Open(filename string) (*DB, error) {
     cname := C.CString(filename)
     defer C.free(unsafe.Pointer(cname))
-    
+
     var db *C.sqlite3
     result := C.sqlite3_open(cname, &db)
     if result != C.SQLITE_OK {
         return nil, errors.New(C.GoString(C.sqlite3_errmsg(db)))
     }
-    
+
     return &DB{db: db}, nil
 }
 
@@ -15381,7 +15447,7 @@ func (db *DB) Close() error {
 func (db *DB) Exec(query string) error {
     cquery := C.CString(query)
     defer C.free(unsafe.Pointer(cquery))
-    
+
     var errMsg *C.char
     result := C.sqlite3_exec(db.db, cquery, nil, nil, &errMsg)
     if result != C.SQLITE_OK {
@@ -15389,7 +15455,7 @@ func (db *DB) Exec(query string) error {
         C.sqlite3_free(unsafe.Pointer(errMsg))
         return err
     }
-    
+
     return nil
 }
 ```
@@ -15599,7 +15665,7 @@ go mod init github.com/username/myproject
 
 # Creates go.mod:
 # module github.com/username/myproject
-# 
+#
 # go 1.21
 ```
 
@@ -15714,7 +15780,7 @@ go work init ./app ./library
 
 # go.work:
 # go 1.21
-# 
+#
 # use (
 #     ./app
 #     ./library
@@ -15986,24 +16052,24 @@ TEXT ·StrLenSIMD(SB), NOSPLIT, $0-24
     MOVQ s_base+0(FP), SI
     MOVQ s_len+8(FP), CX
     XORQ AX, AX              // Counter = 0
-    
+
     PXOR X0, X0              // Zero vector
-    
+
 loop:
     CMPQ CX, $16
     JL tail
-    
+
     MOVDQU (SI), X1          // Load 16 bytes
     PCMPEQB X0, X1           // Compare with zero
     PMOVMSKB X1, DX          // Get mask
     NOTL DX
     POPCNTQ DX, DX           // Count set bits
     ADDQ DX, AX
-    
+
     ADDQ $16, SI
     SUBQ $16, CX
     JMP loop
-    
+
 tail:
     ADDQ CX, AX              // Add remaining
     MOVQ AX, ret+16(FP)
@@ -16023,7 +16089,7 @@ TEXT ·MemCopy(SB), NOSPLIT, $0-48
     MOVQ dst_base+0(FP), DI
     MOVQ src_base+24(FP), SI
     MOVQ src_len+32(FP), CX
-    
+
     // Copy using REP MOVSB (fast on modern CPUs)
     CLD
     REP; MOVSB
@@ -16036,43 +16102,43 @@ TEXT ·MemCopyAVX(SB), NOSPLIT, $0-48
     MOVQ dst_base+0(FP), DI
     MOVQ src_base+24(FP), SI
     MOVQ src_len+32(FP), CX
-    
+
 loop32:
     CMPQ CX, $32
     JL loop8
-    
+
     VMOVDQU (SI), Y0         // Load 32 bytes
     VMOVDQU Y0, (DI)         // Store 32 bytes
-    
+
     ADDQ $32, SI
     ADDQ $32, DI
     SUBQ $32, CX
     JMP loop32
-    
+
 loop8:
     CMPQ CX, $8
     JL loop1
-    
+
     MOVQ (SI), AX
     MOVQ AX, (DI)
-    
+
     ADDQ $8, SI
     ADDQ $8, DI
     SUBQ $8, CX
     JMP loop8
-    
+
 loop1:
     TESTQ CX, CX
     JZ done
-    
+
     MOVB (SI), AL
     MOVB AL, (DI)
-    
+
     INCQ SI
     INCQ DI
     DECQ CX
     JMP loop1
-    
+
 done:
     RET
 ```
@@ -16091,52 +16157,52 @@ TEXT ·XORBytes(SB), NOSPLIT, $0-72
     MOVQ src_base+24(FP), SI
     MOVQ key_base+48(FP), R8
     MOVQ src_len+32(FP), CX
-    
+
     MOVB (R8), AL            // Load single key byte
     MOVQ $0x0101010101010101, BX
     IMULQ AX, BX             // Replicate byte across 64 bits
     MOVQ BX, X0
     PUNPCKLQDQ X0, X0        // Replicate to 128 bits
-    
+
 loop16:
     CMPQ CX, $16
     JL loop8
-    
+
     MOVDQU (SI), X1
     PXOR X0, X1
     MOVDQU X1, (DI)
-    
+
     ADDQ $16, SI
     ADDQ $16, DI
     SUBQ $16, CX
     JMP loop16
-    
+
 loop8:
     CMPQ CX, $8
     JL loop1
-    
+
     MOVQ (SI), AX
     XORQ BX, AX
     MOVQ AX, (DI)
-    
+
     ADDQ $8, SI
     ADDQ $8, DI
     SUBQ $8, CX
     JMP loop8
-    
+
 loop1:
     TESTQ CX, CX
     JZ done
-    
+
     MOVB (SI), AL
     XORB (R8), AL
     MOVB AL, (DI)
-    
+
     INCQ SI
     INCQ DI
     DECQ CX
     JMP loop1
-    
+
 done:
     RET
 ```
@@ -16376,11 +16442,11 @@ func (o *SagaOrchestrator) Execute(ctx context.Context, saga *Saga) error {
     o.mu.Lock()
     o.sagas[saga.ID] = saga
     o.mu.Unlock()
-    
+
     // Execute steps forward
     for i, step := range saga.Steps {
         saga.CurrentStep = i
-        
+
         err := step.Action(ctx, saga.Data)
         if err != nil {
             // Failure - start compensation
@@ -16388,7 +16454,7 @@ func (o *SagaOrchestrator) Execute(ctx context.Context, saga *Saga) error {
             return o.Compensate(ctx, saga)
         }
     }
-    
+
     saga.Status = "completed"
     return nil
 }
@@ -16397,7 +16463,7 @@ func (o *SagaOrchestrator) Compensate(ctx context.Context, saga *Saga) error {
     // Execute compensating transactions in reverse
     for i := saga.CurrentStep; i >= 0; i-- {
         step := saga.Steps[i]
-        
+
         if step.Compensate != nil {
             err := step.Compensate(ctx, saga.Data)
             if err != nil {
@@ -16406,7 +16472,7 @@ func (o *SagaOrchestrator) Compensate(ctx context.Context, saga *Saga) error {
             }
         }
     }
-    
+
     saga.Status = "failed"
     return errors.New("saga failed and compensated")
 }
@@ -16624,14 +16690,14 @@ Implement the Sidecar pattern to add functionality to services without modifying
 func main() {
     logFile, _ := os.OpenFile("/var/log/app/app.log", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
     defer logFile.Close()
-    
+
     logger := log.New(logFile, "", log.LstdFlags)
-    
+
     http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
         logger.Printf("Request: %s %s", r.Method, r.URL.Path)
         w.Write([]byte("Hello"))
     })
-    
+
     http.ListenAndServe(":8080", nil)
 }
 ```
@@ -16646,7 +16712,7 @@ type LogForwarder struct {
 
 func (f *LogForwarder) WatchAndForward(logPath string) {
     t, _ := tail.TailFile(logPath, tail.Config{Follow: true})
-    
+
     for line := range t.Lines {
         f.forwardToLoki(line.Text)
     }
@@ -16660,7 +16726,7 @@ func (f *LogForwarder) forwardToLoki(logLine string) {
         Level:     "info",
         App:       f.appName,
     }
-    
+
     // Send to Loki
     payload := map[string]interface{}{
         "streams": []map[string]interface{}{
@@ -16674,7 +16740,7 @@ func (f *LogForwarder) forwardToLoki(logLine string) {
             },
         },
     }
-    
+
     jsonData, _ := json.Marshal(payload)
     http.Post(f.lokiURL+"/loki/api/v1/push", "application/json", bytes.NewBuffer(jsonData))
 }
@@ -16684,7 +16750,7 @@ func main() {
         lokiURL: os.Getenv("LOKI_URL"),
         appName: os.Getenv("APP_NAME"),
     }
-    
+
     forwarder.WatchAndForward("/var/log/app/app.log")
 }
 ```
@@ -16699,7 +16765,7 @@ services:
       - logs:/var/log/app
     ports:
       - "8080:8080"
-  
+
   log-sidecar:
     build: ./log-sidecar
     volumes:
@@ -16731,21 +16797,21 @@ func (p *AuthProxy) ServeHTTP(w http.ResponseWriter, r *http.Request) {
         http.Error(w, "Unauthorized", http.StatusUnauthorized)
         return
     }
-    
+
     token := strings.TrimPrefix(authHeader, "Bearer ")
-    
+
     // Validate JWT
     claims, err := p.validateJWT(token)
     if err != nil {
         http.Error(w, "Invalid token", http.StatusUnauthorized)
         return
     }
-    
+
     // Add user info to headers for upstream
     r.Header.Set("X-User-ID", claims.UserID)
     r.Header.Set("X-User-Email", claims.Email)
     r.Header.Set("X-User-Roles", strings.Join(claims.Roles, ","))
-    
+
     // Forward to main app
     p.proxyRequest(w, r)
 }
@@ -16754,11 +16820,11 @@ func (p *AuthProxy) validateJWT(tokenString string) (*Claims, error) {
     token, err := jwt.Parse(tokenString, func(token *jwt.Token) (interface{}, error) {
         return p.jwtSecret, nil
     })
-    
+
     if err != nil || !token.Valid {
         return nil, errors.New("invalid token")
     }
-    
+
     claims := token.Claims.(jwt.MapClaims)
     return &Claims{
         UserID: claims["user_id"].(string),
@@ -16778,7 +16844,7 @@ func main() {
         upstreamURL: parseURL("http://localhost:8080"),
         jwtSecret:   []byte(os.Getenv("JWT_SECRET")),
     }
-    
+
     // Sidecar listens on different port
     http.ListenAndServe(":8000", proxy)
 }
@@ -16792,15 +16858,15 @@ func main() {
         // User info already validated and in headers
         userID := r.Header.Get("X-User-ID")
         email := r.Header.Get("X-User-Email")
-        
+
         profile := map[string]string{
             "user_id": userID,
             "email":   email,
         }
-        
+
         json.NewEncoder(w).Encode(profile)
     })
-    
+
     http.ListenAndServe(":8080", nil)
 }
 ```
@@ -16825,10 +16891,10 @@ func (m *MetricsSidecar) CollectMetrics() {
         []string{"method", "path", "status"},
     )
     m.registry.MustRegister(requestDuration)
-    
+
     // App-specific metrics (read from app's health endpoint)
     go m.pollAppMetrics()
-    
+
     // Expose metrics endpoint
     http.Handle("/metrics", promhttp.HandlerFor(m.registry, promhttp.HandlerOpts{}))
     http.ListenAndServe(":9090", nil)
@@ -16841,11 +16907,11 @@ func (m *MetricsSidecar) pollAppMetrics() {
         if err != nil {
             continue
         }
-        
+
         var health HealthStatus
         json.NewDecoder(resp.Body).Decode(&health)
         resp.Body.Close()
-        
+
         // Export app metrics to Prometheus format
         // ...
     }
@@ -16868,7 +16934,7 @@ func (rl *RateLimiterSidecar) ServeHTTP(w http.ResponseWriter, r *http.Request) 
         http.Error(w, "Rate limit exceeded", http.StatusTooManyRequests)
         return
     }
-    
+
     // Forward request
     proxy := httputil.NewSingleHostReverseProxy(rl.upstreamURL)
     proxy.ServeHTTP(w, r)
@@ -16877,12 +16943,12 @@ func (rl *RateLimiterSidecar) ServeHTTP(w http.ResponseWriter, r *http.Request) 
 func main() {
     // 100 requests per second, burst of 200
     limiter := rate.NewLimiter(100, 200)
-    
+
     sidecar := &RateLimiterSidecar{
         upstreamURL: parseURL("http://localhost:8080"),
         limiter:     limiter,
     }
-    
+
     http.ListenAndServe(":8000", sidecar)
 }
 ```
@@ -16905,7 +16971,7 @@ spec:
     volumeMounts:
     - name: logs
       mountPath: /var/log/app
-  
+
   # Logging sidecar
   - name: log-forwarder
     image: log-sidecar:latest
@@ -16916,7 +16982,7 @@ spec:
     env:
     - name: LOKI_URL
       value: "http://loki:3100"
-  
+
   # Auth proxy sidecar
   - name: auth-proxy
     image: auth-sidecar:latest
@@ -16930,7 +16996,7 @@ spec:
         secretKeyRef:
           name: jwt-secret
           key: secret
-  
+
   # Metrics sidecar
   - name: metrics
     image: metrics-sidecar:latest
@@ -16939,7 +17005,7 @@ spec:
     env:
     - name: APP_URL
       value: "http://localhost:8080"
-  
+
   volumes:
   - name: logs
     emptyDir: {}
@@ -17101,9 +17167,9 @@ type RoutingRule struct {
 
 func (p *StranglerProxy) ServeHTTP(w http.ResponseWriter, r *http.Request) {
     rule := p.router.GetRule(r.Method, r.URL.Path)
-    
+
     targetURL := p.legacyURL
-    
+
     if rule != nil {
         if rule.UseNewService {
             // Full migration
@@ -17121,10 +17187,10 @@ func (p *StranglerProxy) ServeHTTP(w http.ResponseWriter, r *http.Request) {
             }
         }
     }
-    
+
     // Add header to track routing decision
     r.Header.Set("X-Routed-To", targetURL.Host)
-    
+
     // Proxy request
     proxy := httputil.NewSingleHostReverseProxy(targetURL)
     proxy.ServeHTTP(w, r)
@@ -17156,33 +17222,33 @@ func (s *FeatureFlagService) IsEnabled(flagName, userID string) bool {
     s.mu.RLock()
     flag, exists := s.flags[flagName]
     s.mu.RUnlock()
-    
+
     if !exists {
         return false // Default to legacy
     }
-    
+
     // Check blacklist
     if contains(flag.Blacklist, userID) {
         return false
     }
-    
+
     // Check whitelist
     if len(flag.Whitelist) > 0 {
         return contains(flag.Whitelist, userID)
     }
-    
+
     // Check rollout percentage
     if flag.RolloutPercent > 0 {
         return hashUserID(userID)%100 < flag.RolloutPercent
     }
-    
+
     return flag.Enabled
 }
 
 // Use in handler
 func (api *API) GetUser(w http.ResponseWriter, r *http.Request) {
     userID := r.Header.Get("X-User-ID")
-    
+
     if api.featureFlags.IsEnabled("new-user-service", userID) {
         // Call new microservice
         api.newUserService.GetUser(w, r)
@@ -17205,21 +17271,21 @@ type DualWriter struct {
 
 func (dw *DualWriter) CreateUser(user *User) error {
     var legacyErr, newErr error
-    
+
     // Write to legacy system (primary)
     legacyErr = dw.legacyDB.Exec("INSERT INTO users ...", user)
-    
+
     // Write to new system (secondary)
     go func() {
         newErr = dw.newDB.Exec("INSERT INTO users ...", user)
-        
+
         // Log any inconsistencies
         if newErr != nil {
             log.Printf("Dual write failed for new DB: %v", newErr)
             dw.verifier.RecordInconsistency(user.ID)
         }
     }()
-    
+
     // Return legacy result (primary)
     return legacyErr
 }
@@ -17227,18 +17293,18 @@ func (dw *DualWriter) CreateUser(user *User) error {
 func (dw *DualWriter) GetUser(id string) (*User, error) {
     // Read from legacy (primary)
     user, err := dw.legacyDB.Query("SELECT * FROM users WHERE id = ?", id)
-    
+
     // Shadow read from new system
     go func() {
         newUser, newErr := dw.newDB.Query("SELECT * FROM users WHERE id = ?", id)
-        
+
         // Compare results
         if newErr == nil && !usersEqual(user, newUser) {
             log.Printf("Data mismatch for user %s", id)
             dw.verifier.RecordInconsistency(id)
         }
     }()
-    
+
     return user, err
 }
 ```
@@ -17267,16 +17333,16 @@ type EndpointStatus struct {
 func (mt *MigrationTracker) RecordRequest(path, method, target string, duration time.Duration, err error) {
     mt.mu.Lock()
     defer mt.mu.Unlock()
-    
+
     key := method + ":" + path
     status := mt.endpoints[key]
     if status == nil {
         status = &EndpointStatus{Path: path, Method: method}
         mt.endpoints[key] = status
     }
-    
+
     status.TotalRequests++
-    
+
     if target == "new" {
         status.NewServiceRequests++
         status.AvgLatencyNew = (status.AvgLatencyNew + duration) / 2
@@ -17284,11 +17350,11 @@ func (mt *MigrationTracker) RecordRequest(path, method, target string, duration 
         status.LegacyRequests++
         status.AvgLatencyLegacy = (status.AvgLatencyLegacy + duration) / 2
     }
-    
+
     if err != nil {
         status.ErrorRate = float64(status.ErrorRate + 0.01)
     }
-    
+
     // Update status
     if status.NewServiceRequests == status.TotalRequests {
         status.Status = "completed"
@@ -17300,7 +17366,7 @@ func (mt *MigrationTracker) RecordRequest(path, method, target string, duration 
 func (mt *MigrationTracker) GetDashboard() map[string]*EndpointStatus {
     mt.mu.RLock()
     defer mt.mu.RUnlock()
-    
+
     // Return copy
     dashboard := make(map[string]*EndpointStatus)
     for k, v := range mt.endpoints {
@@ -17322,18 +17388,18 @@ type DataMigrationWorker struct {
 
 func (w *DataMigrationWorker) MigrateUsers() error {
     var lastID int64 = 0
-    
+
     for {
         // Fetch batch from legacy
         users, err := w.fetchUserBatch(lastID, w.batchSize)
         if err != nil {
             return err
         }
-        
+
         if len(users) == 0 {
             break // All done
         }
-        
+
         // Transform and insert into new system
         for _, user := range users {
             newUser := w.transformUser(user)
@@ -17344,11 +17410,11 @@ func (w *DataMigrationWorker) MigrateUsers() error {
             }
             lastID = user.ID
         }
-        
+
         log.Printf("Migrated batch, last ID: %d", lastID)
         time.Sleep(100 * time.Millisecond) // Rate limit
     }
-    
+
     return nil
 }
 
@@ -17357,14 +17423,14 @@ func (w *DataMigrationWorker) VerifyMigration() error {
     var legacyCount, newCount int64
     w.legacyDB.QueryRow("SELECT COUNT(*) FROM users").Scan(&legacyCount)
     w.newDB.QueryRow("SELECT COUNT(*) FROM users").Scan(&newCount)
-    
+
     if legacyCount != newCount {
         return fmt.Errorf("count mismatch: legacy=%d, new=%d", legacyCount, newCount)
     }
-    
+
     // Sample verification
     // ...
-    
+
     return nil
 }
 ```
@@ -17584,14 +17650,14 @@ func (s *UserService) CreateUser(user *User) error {
     if err != nil {
         return err
     }
-    
+
     // Publish event
     s.eventBus.Publish("UserCreated", UserCreatedEvent{
         UserID: user.ID,
         Email:  user.Email,
         Name:   user.Name,
     })
-    
+
     return nil
 }
 
@@ -17600,13 +17666,13 @@ func (s *UserService) UpdateUser(userID string, updates *UserUpdates) error {
     if err != nil {
         return err
     }
-    
+
     s.eventBus.Publish("UserUpdated", UserUpdatedEvent{
         UserID: userID,
         Email:  updates.Email,
         Name:   updates.Name,
     })
-    
+
     return nil
 }
 
@@ -17625,7 +17691,7 @@ func (s *OrderService) OnUserCreated(event UserCreatedEvent) {
 
 func (s *OrderService) OnUserUpdated(event UserUpdatedEvent) {
     s.db.Exec(`
-        UPDATE user_snapshots 
+        UPDATE user_snapshots
         SET email = $1, name = $2, last_synced = $3
         WHERE user_id = $4
     `, event.Email, event.Name, time.Now(), event.UserID)
@@ -17649,30 +17715,30 @@ func (s *OrderCompositionService) GetOrderDetails(orderID string) (*OrderDetails
     if err != nil {
         return nil, err
     }
-    
+
     // Fetch user details from User Service (parallel)
     var user *User
     var products []*Product
-    
+
     errGroup := new(errgroup.Group)
-    
+
     errGroup.Go(func() error {
         var err error
         user, err = s.userService.GetUser(order.UserID)
         return err
     })
-    
+
     errGroup.Go(func() error {
         productIDs := extractProductIDs(order.Items)
         var err error
         products, err = s.productService.GetProducts(productIDs)
         return err
     })
-    
+
     if err := errGroup.Wait(); err != nil {
         return nil, err
     }
-    
+
     // Compose response
     return &OrderDetails{
         Order:    order,
@@ -17714,7 +17780,7 @@ func (p *OrderReadModelProjector) OnOrderCreated(event OrderCreatedEvent) {
     // Build denormalized read model
     user, _ := userService.GetUser(event.UserID)
     products, _ := productService.GetProducts(event.ProductIDs)
-    
+
     readModel := OrderReadModel{
         OrderID:     event.OrderID,
         UserID:      event.UserID,
@@ -17725,24 +17791,24 @@ func (p *OrderReadModelProjector) OnOrderCreated(event OrderCreatedEvent) {
         Status:      event.Status,
         CreatedAt:   event.CreatedAt,
     }
-    
+
     p.readDB.InsertOne(context.Background(), readModel)
 }
 
 // Query using read model (fast!)
 func (s *OrderQueryService) SearchOrders(filter OrderFilter) ([]OrderReadModel, error) {
     query := bson.M{}
-    
+
     if filter.UserEmail != "" {
         query["useremail"] = filter.UserEmail
     }
-    
+
     if filter.MinAmount > 0 {
         query["totalamount"] = bson.M{"$gte": filter.MinAmount}
     }
-    
+
     cursor, _ := s.readDB.Find(context.Background(), query)
-    
+
     var orders []OrderReadModel
     cursor.All(context.Background(), &orders)
     return orders, nil

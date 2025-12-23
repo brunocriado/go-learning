@@ -1,0 +1,51 @@
+# Project Implementations
+# Each project should be its own Git repository
+implementations/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Thumbnails
+Thumbs.db
+
+# Linux
+*~
+.directory
+
+# Temporary files
+*.swp
+*.swo
+*.tmp
+*.temp
+
+# Editor directories
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Go workspace file (if using Go workspaces)
+go.work
+go.work.sum
+
+# Build outputs (if you accidentally build in root)
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test outputs
+*.test
+*.out
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
