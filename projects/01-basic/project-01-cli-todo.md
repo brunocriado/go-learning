@@ -151,51 +151,51 @@ Use this checklist to guide your implementation. Check off tasks as you complete
 
 ### Phase 4: Command-Line Interface (`main.go`)
 - [x] **Task 4.1**: Research the `flag` package - how does it parse command-line arguments?
-- [ ] **Task 4.2**: Research `flag.NewFlagSet()` - why use flag sets instead of global flags?
-- [ ] **Task 4.3**: Design the command structure (what subcommands do you need?)
-- [ ] **Task 4.4**: Implement argument validation - what if user provides no subcommand?
-- [ ] **Task 4.5**: Create flag set for the `add` command with -title, -desc, -priority flags
-- [ ] **Task 4.6**: Figure out how to parse flags from `os.Args[2:]` (why start at index 2?)
-- [ ] **Task 4.7**: Create flag set for the `list` command with filtering options
-- [ ] **Task 4.8**: Implement the `complete` command - how to get the ID from arguments?
-- [ ] **Task 4.9**: Implement the `delete` command - similar to complete
-- [ ] **Task 4.10**: Research `strconv.Atoi()` for converting string IDs to integers
+- [x] **Task 4.2**: Research `flag.NewFlagSet()` - why use flag sets instead of global flags?
+- [x] **Task 4.3**: Design the command structure (what subcommands do you need?)
+- [x] **Task 4.4**: Implement argument validation - what if user provides no subcommand?
+- [x] **Task 4.5**: Create flag set for the `add` command with -title, -desc, -priority flags
+- [x] **Task 4.6**: Figure out how to parse flags from `os.Args[2:]` (why start at index 2?)
+- [x] **Task 4.7**: Create flag set for the `list` command with filtering options
+- [x] **Task 4.8**: Implement the `complete` command - how to get the ID from arguments?
+- [x] **Task 4.9**: Implement the `delete` command - similar to complete
+- [x] **Task 4.10**: Research `strconv.Atoi()` for converting string IDs to integers
 - [ ] **Task 4.11**: Load existing todos at the start of main() - handle errors appropriately
-- [ ] **Task 4.12**: Implement switch statement for routing subcommands
-- [ ] **Task 4.13**: After each modifying operation (add/complete/delete), save the todos
-- [ ] **Task 4.14**: Create `printUsage()` function - when should it be called?
-- [ ] **Task 4.15**: Research `text/tabwriter` for formatted table output
-- [ ] **Task 4.16**: Implement `displayTodos()` to show todos in a readable table format
-- [ ] **Task 4.17**: Format dates nicely (research `time.Format()` with layouts)
-- [ ] **Task 4.18**: Handle empty todo list case in display function
+- [x] **Task 4.12**: Implement switch statement for routing subcommands
+- [x] **Task 4.13**: After each modifying operation (add/complete/delete), save the todos
+- [x] **Task 4.14**: Create `printUsage()` function - when should it be called?
+- [x] **Task 4.15**: Research `text/tabwriter` for formatted table output
+- [x] **Task 4.16**: Implement `displayTodos()` to show todos in a readable table format
+- [x] **Task 4.17**: Format dates nicely (research `time.Format()` with layouts)
+- [x] **Task 4.18**: Handle empty todo list case in display function
 
 ### Phase 5: Testing & Debugging
-- [ ] **Task 5.1**: Build the project with `go build` - fix any compilation errors
-- [ ] **Task 5.2**: Test adding a single todo - does it create the JSON file?
-- [ ] **Task 5.3**: Examine the created JSON file - is it properly formatted?
-- [ ] **Task 5.4**: Test listing todos - does the table display correctly?
-- [ ] **Task 5.5**: Test adding multiple todos - are IDs unique and incrementing?
-- [ ] **Task 5.6**: Test completing a todo - does it update the Completed field and timestamp?
-- [ ] **Task 5.7**: Test listing only pending todos - is filtering working?
-- [ ] **Task 5.8**: Test listing only completed todos
-- [ ] **Task 5.9**: Test deleting a todo - is it removed from the list?
-- [ ] **Task 5.10**: Test edge cases: deleting non-existent ID, completing already completed todo
-- [ ] **Task 5.11**: Test error handling: invalid priority, missing required flags
-- [ ] **Task 5.12**: Test persistence: restart the app, are todos still there?
-- [ ] **Task 5.13**: Deliberately corrupt the JSON file - does error handling work?
-- [ ] **Task 5.14**: Test with no subcommand - does usage help appear?
+- [x] **Task 5.1**: Build the project with `go build` - fix any compilation errors
+- [x] **Task 5.2**: Test adding a single todo - does it create the JSON file?
+- [x] **Task 5.3**: Examine the created JSON file - is it properly formatted?
+- [x] **Task 5.4**: Test listing todos - does the table display correctly?
+- [x] **Task 5.5**: Test adding multiple todos - are IDs unique and incrementing?
+- [x] **Task 5.6**: Test completing a todo - does it update the Completed field and timestamp?
+- [x] **Task 5.7**: Test listing only pending todos - is filtering working?
+- [x] **Task 5.8**: Test listing only completed todos
+- [x] **Task 5.9**: Test deleting a todo - is it removed from the list?
+- [x] **Task 5.10**: Test edge cases: deleting non-existent ID, completing already completed todo
+- [x] **Task 5.11**: Test error handling: invalid priority, missing required flags
+- [x] **Task 5.12**: Test persistence: restart the app, are todos still there?
+- [x] **Task 5.13**: Deliberately corrupt the JSON file - does error handling work?
+- [x] **Task 5.14**: Test with no subcommand - does usage help appear?
 
 ### Phase 6: Refinement
-- [ ] **Task 6.1**: Add helpful error messages for common mistakes
-- [ ] **Task 6.2**: Improve table formatting - align columns nicely
-- [ ] **Task 6.3**: Add color or symbols to distinguish pending vs completed todos
-- [ ] **Task 6.4**: Validate priority values (e.g., 1-5 range)
-- [ ] **Task 6.5**: Validate that title is not empty before adding
-- [ ] **Task 6.6**: Add confirmation messages after successful operations
-- [ ] **Task 6.7**: Consider adding a `clear` or `reset` command
-- [ ] **Task 6.8**: Write comments explaining complex logic
-- [ ] **Task 6.9**: Run `go fmt` to format your code properly
-- [ ] **Task 6.10**: Review code for potential improvements
+- [x] **Task 6.1**: Add helpful error messages for common mistakes
+- [x] **Task 6.2**: Improve table formatting - align columns nicely
+- [x] **Task 6.3**: Add color or symbols to distinguish pending vs completed todos
+- [x] **Task 6.4**: Validate priority values (e.g., 1-5 range)
+- [x] **Task 6.5**: Validate that title is not empty before adding
+- [x] **Task 6.6**: Add confirmation messages after successful operations
+- [x] **Task 6.7**: Consider adding a `clear` or `reset` command
+- [x] **Task 6.8**: Write comments explaining complex logic
+- [x] **Task 6.9**: Run `go fmt` to format your code properly
+- [x] **Task 6.10**: Review code for potential improvements
 
 ### Bonus Challenges (Optional)
 - [ ] **Bonus 1**: Add an `edit` command to modify existing todos
@@ -438,12 +438,209 @@ After completing this project, you should understand:
 
 ---
 
+## 🔍 Code Review & Recommendations
+
+### ✅ What You Did Well
+
+**Strong Fundamentals:**
+- ✅ **Proper separation of concerns** - Split code into `main.go`, `todo.go`, and `storage.go`
+- ✅ **Consistent error handling** - All errors are checked and handled appropriately
+- ✅ **Good input validation** - Check for required fields, validate IDs, handle edge cases
+- ✅ **Professional CLI design** - Used FlagSets correctly for subcommands
+- ✅ **Proper file I/O** - HandleD missing file gracefully, proper permissions (0644)
+- ✅ **Clean display logic** - Dynamic headers based on filter type, column truncation
+- ✅ **Good method naming** - Clear, descriptive names (Add, Complete, Delete, Filter)
+- ✅ **Defer pattern** - Used `defer w.Flush()` correctly in tabwriter
+
+**Advanced Concepts Applied:**
+- ✅ Pointer receivers for modifying methods
+- ✅ JSON struct tags with omitempty
+- ✅ Pointer for nullable field (CompletedAt)
+- ✅ Helper function for truncation
+- ✅ Priority validation (1-5 range)
+
+### ⚠️ Areas for Improvement
+
+#### **High Priority (Do Now)**
+
+**1. Code Duplication in main.go**
+```go
+// You repeat this 4 times:
+tl, err := (&TodoList{}).ReadFromFile()
+if err != nil {
+    fmt.Fprintf(os.Stderr, "Error reading from file: %v\n", err)
+    os.Exit(1)
+}
+```
+**Improvement:** Extract to helper function:
+```go
+func loadTodoList() (*TodoList, error) {
+    return (&TodoList{}).ReadFromFile()
+}
+```
+
+**2. Magic Strings**
+```go
+// Scattered throughout code:
+"pending", "completed", "all"
+"2006-01-02 15:04"
+```
+**Improvement:** Define constants at package level:
+```go
+const (
+    FilterPending   = "pending"
+    FilterCompleted = "completed"
+    FilterAll       = "all"
+    DateTimeFormat  = "2006-01-02 15:04"
+)
+```
+
+**3. Inconsistent Method Receivers**
+```go
+// These methods don't modify TodoList, should be value receivers:
+func (tl *TodoList) GetById(id int) int        // Should be (tl TodoList)
+func (tl *TodoList) getLast() int              // Should be (tl TodoList)
+```
+
+**4. Global Variable in storage.go**
+```go
+var todoFile = "./todos.json"  // Should be const
+```
+**Fix:** `const todoFile = "./todos.json"`
+
+**5. Grammar Error in Error Message**
+```go
+"complete: todo id must a positive number"  // Missing "be"
+```
+**Fix:** `"complete: todo id must be a positive number"`
+
+**6. Missing Empty List Check**
+```go
+func displayTodos(todos []Todo, flag string) {
+    // Doesn't check if empty
+```
+**Add at start:**
+```go
+if len(todos) == 0 {
+    fmt.Println("No todos found.")
+    return
+}
+```
+
+#### **Medium Priority (Next Session)**
+
+**7. Extract Command Handlers**
+```go
+// main() switch statement is 150+ lines
+// Extract to separate functions:
+func runAdd(tl *TodoList, title, desc string, priority int) error
+func runList(tl *TodoList, pending, completed bool)
+func runComplete(tl *TodoList, id int) error
+func runDelete(tl *TodoList, id int) error
+```
+
+**8. Make GetById Private**
+```go
+func (tl *TodoList) GetById(id int) int  // Exported but only used internally
+```
+**Change to:** `func (tl TodoList) getById(id int) int`
+
+**9. Improve Error Messages with Context**
+```go
+return fmt.Errorf("error reading file: %w", err)  // Instead of just returning err
+```
+
+**10. Add GoDoc Comments**
+```go
+// Complete marks the todo with the given ID as completed.
+// It sets the Completed flag to true and records the completion time.
+// Returns an error if the ID is invalid or not found.
+func (tl *TodoList) Complete(id int) error {
+```
+
+#### **Low Priority (Polish)**
+
+**11. Simplify SaveToFile Return**
+```go
+// Current:
+err = os.WriteFile(todoFile, content, 0644)
+if err != nil {
+    return err
+}
+return nil
+
+// Can be:
+return os.WriteFile(todoFile, content, 0644)
+```
+
+**12. Package Documentation**
+Add at top of `main.go`:
+```go
+// Package main implements a command-line todo list manager
+// with persistent JSON storage.
+package main
+```
+
+**13. Better TODO Comment**
+```go
+// TODO: Create a function to unmark as completed
+// Better:
+// TODO(bruno): Add Uncomplete() method to revert completed todos
+```
+
+### 📊 Overall Assessment
+
+**Code Quality:** 8/10 - Well-structured, functional, and mostly clean
+
+**Go Idioms:** 7/10 - Good understanding, but some non-idiomatic patterns (global var, wrong receivers)
+
+**Error Handling:** 9/10 - Excellent! Consistent and thorough
+
+**Separation of Concerns:** 9/10 - Great file organization
+
+**Professional Readiness:** 7/10 - Needs refactoring but solid foundation
+
+### 🎯 What to Focus On Going Forward
+
+**For Your Next Project:**
+
+1. **Constants Over Magic Strings** - Always define constants for repeated string literals
+2. **Extract Helper Functions** - If you copy-paste code more than twice, make it a function
+3. **Choose Correct Receivers** - Value receiver if read-only, pointer if modifying
+4. **Add Documentation** - Every exported function/type should have a GoDoc comment
+5. **Test Edge Cases** - Empty lists, invalid input, missing files
+6. **Use Error Wrapping** - Provide context with `fmt.Errorf("context: %w", err)`
+
+**Golden Rules:**
+- ✅ **DRY (Don't Repeat Yourself)** - You have some duplication in main.go
+- ✅ **Single Responsibility** - Each function does one thing (you nailed this!)
+- ✅ **Fail Fast** - Validate input early (good job!)
+- ⚠️ **Use Constants** - Reduce magic strings/numbers
+- ⚠️ **Document Exports** - Add GoDoc comments
+
+### 🏆 Skills Mastered in This Project
+
+- ✅ Structs and methods
+- ✅ JSON marshaling/unmarshaling
+- ✅ File I/O with proper error handling
+- ✅ Flag parsing with FlagSets
+- ✅ Slice operations (append, delete)
+- ✅ Pointer types and nullable fields
+- ✅ Tabwriter for formatted output
+- ✅ CLI command routing
+- ✅ Input validation
+
+**You're ready for Project 2!** These improvements will make you write cleaner code from the start in future projects.
+
+---
+
 ## 🔗 Related Resources
 
 - [Go by Example: Structs](https://gobyexample.com/structs)
 - [Go by Example: JSON](https://gobyexample.com/json)
 - [Go Flag Package](https://pkg.go.dev/flag)
 - [Effective Go](https://go.dev/doc/effective_go)
+- [Go Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments) - Official style guide
 
 ---
 

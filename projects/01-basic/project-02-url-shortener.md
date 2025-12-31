@@ -113,6 +113,182 @@ Build a web service that creates short aliases for long URLs (like bit.ly). This
 
 ---
 
+## 📋 Task Checklist
+
+Use this checklist to guide your implementation. Check off tasks as you complete them. **Remember**: These are guidance tasks, not solutions. Research and figure out the implementation details yourself.
+
+### Phase 1: Project Setup & Foundation
+- [ ] **Task 1.1**: Create project directory and initialize Go module
+- [ ] **Task 1.2**: Create empty files: `main.go`, `shortener.go`, `handlers.go`
+- [ ] **Task 1.3**: Create `templates/` directory for HTML files
+- [ ] **Task 1.4**: Research the `net/http` package - how does Go handle HTTP?
+- [ ] **Task 1.5**: Research Go maps - syntax, initialization, and operations
+- [ ] **Task 1.6**: Research `sync.RWMutex` - why do we need thread safety?
+- [ ] **Task 1.7**: Understand the difference between `Lock()` and `RLock()`
+
+### Phase 2: Core Data Structures (`shortener.go`)
+- [ ] **Task 2.1**: Define `URLData` struct with all fields (ID, OriginalURL, ShortCode, Clicks, CreatedAt)
+- [ ] **Task 2.2**: Add JSON tags to each field for API responses
+- [ ] **Task 2.3**: Define `URLShortener` struct with map and mutex
+- [ ] **Task 2.4**: Research map initialization - what's the zero value? How to initialize?
+- [ ] **Task 2.5**: Implement `NewURLShortener()` constructor function
+- [ ] **Task 2.6**: Test map operations manually - insert, lookup, delete
+- [ ] **Task 2.7**: Research hash functions - what's MD5? How to use `crypto/md5`?
+- [ ] **Task 2.8**: Implement `generateShortCode()` - hash URL and convert to short string
+- [ ] **Task 2.9**: Research Base62 encoding - why use it for short codes?
+- [ ] **Task 2.10**: Implement `base62Encode()` - convert number to alphanumeric string
+- [ ] **Task 2.11**: Test short code generation - are codes unique? URL-safe?
+- [ ] **Task 2.12**: Implement `Shorten()` method with mutex locking
+- [ ] **Task 2.13**: Handle collision case - what if short code already exists?
+- [ ] **Task 2.14**: Implement `Resolve()` method with read lock
+- [ ] **Task 2.15**: What should `Resolve()` return if short code doesn't exist?
+- [ ] **Task 2.16**: Implement `IncrementClick()` - how to safely update counter?
+- [ ] **Task 2.17**: Implement `GetStats()` method to return URL data
+- [ ] **Task 2.18**: Implement `GetAll()` method - how to convert map to slice?
+- [ ] **Task 2.19**: Test all methods with sample data
+
+### Phase 3: HTTP Request/Response Structures (`handlers.go`)
+- [ ] **Task 3.1**: Define `ShortenRequest` struct with URL field
+- [ ] **Task 3.2**: Define `ShortenResponse` struct with ShortCode and ShortURL
+- [ ] **Task 3.3**: Define `ErrorResponse` struct for error messages
+- [ ] **Task 3.4**: Research `http.ResponseWriter` - what methods does it have?
+- [ ] **Task 3.5**: Research `*http.Request` - how to access body, method, headers?
+- [ ] **Task 3.6**: Implement `respondWithJSON()` helper function
+- [ ] **Task 3.7**: What headers need to be set for JSON responses?
+- [ ] **Task 3.8**: Implement `respondWithError()` helper function
+- [ ] **Task 3.9**: Test JSON encoding manually with sample data
+
+### Phase 4: HTTP Handlers Implementation (`handlers.go`)
+- [ ] **Task 4.1**: Implement `shortenHandler()` - parse POST request body
+- [ ] **Task 4.2**: How to decode JSON from `r.Body`? Research `json.NewDecoder`
+- [ ] **Task 4.3**: Validate the incoming URL - is it empty? Valid format?
+- [ ] **Task 4.4**: Research URL validation - `strings.HasPrefix()` or regex?
+- [ ] **Task 4.5**: Call `Shorten()` and construct response with full short URL
+- [ ] **Task 4.6**: How to build the full short URL? Combine host + path + shortCode
+- [ ] **Task 4.7**: Handle errors in `shortenHandler` - what status codes to return?
+- [ ] **Task 4.8**: Implement `redirectHandler()` - extract short code from URL path
+- [ ] **Task 4.9**: Research `http.Redirect()` - what status code for permanent redirect?
+- [ ] **Task 4.10**: What to do if short code doesn't exist in `redirectHandler`?
+- [ ] **Task 4.11**: Call `IncrementClick()` before redirecting
+- [ ] **Task 4.12**: Implement `statsHandler()` - return URLData as JSON
+- [ ] **Task 4.13**: Implement `listHandler()` - return all URLs as JSON array
+- [ ] **Task 4.14**: Implement `homeHandler()` - serve HTML file
+- [ ] **Task 4.15**: Research `http.ServeFile()` vs `html/template` package
+- [ ] **Task 4.16**: Handle HTTP method validation - reject wrong methods gracefully
+
+### Phase 5: HTML Frontend (`templates/index.html`)
+- [ ] **Task 5.1**: Create basic HTML structure with form
+- [ ] **Task 5.2**: Add input field for URL with proper type and validation
+- [ ] **Task 5.3**: Add submit button
+- [ ] **Task 5.4**: Add div to display results
+- [ ] **Task 5.5**: Research JavaScript `fetch()` API for making HTTP requests
+- [ ] **Task 5.6**: Implement form submission with `preventDefault()`
+- [ ] **Task 5.7**: Send POST request to `/api/shorten` with JSON body
+- [ ] **Task 5.8**: Parse JSON response and display short URL
+- [ ] **Task 5.9**: Handle and display errors from API
+- [ ] **Task 5.10**: Add "Copy to Clipboard" button functionality
+- [ ] **Task 5.11**: Research `navigator.clipboard.writeText()` API
+- [ ] **Task 5.12**: Add basic CSS styling for better UX
+- [ ] **Task 5.13**: Make URL input clickable (link) in result display
+
+### Phase 6: Server Setup & Routing (`main.go`)
+- [ ] **Task 6.1**: Research `http.ServeMux` - what is a router?
+- [ ] **Task 6.2**: Create `URLShortener` instance in main()
+- [ ] **Task 6.3**: Create `http.ServeMux` for routing
+- [ ] **Task 6.4**: Register route: `/` -> homeHandler
+- [ ] **Task 6.5**: Register route: `/api/shorten` -> shortenHandler
+- [ ] **Task 6.6**: Register route: `/api/list` -> listHandler
+- [ ] **Task 6.7**: Register route: `/s/` -> redirectHandler (prefix match)
+- [ ] **Task 6.8**: Register route: `/stats/` -> statsHandler
+- [ ] **Task 6.9**: Research how `HandleFunc()` works - method vs function
+- [ ] **Task 6.10**: How to pass methods as handler functions?
+- [ ] **Task 6.11**: Implement `loggingMiddleware()` wrapper function
+- [ ] **Task 6.12**: Research middleware pattern - how to wrap handlers?
+- [ ] **Task 6.13**: Log each request: method, path, duration
+- [ ] **Task 6.14**: Research `time.Since()` for measuring request duration
+- [ ] **Task 6.15**: Start server with `http.ListenAndServe()`
+- [ ] **Task 6.16**: What happens if server fails to start? Handle error
+
+### Phase 7: Testing & Debugging
+- [ ] **Task 7.1**: Build the project - fix any compilation errors
+- [ ] **Task 7.2**: Start the server - does it listen on port 8080?
+- [ ] **Task 7.3**: Test accessing `http://localhost:8080` in browser
+- [ ] **Task 7.4**: Does the HTML form load correctly?
+- [ ] **Task 7.5**: Test shortening a URL through the web interface
+- [ ] **Task 7.6**: Does the short URL display correctly?
+- [ ] **Task 7.7**: Click the short URL - does it redirect?
+- [ ] **Task 7.8**: Test with curl: POST to `/api/shorten`
+- [ ] **Task 7.9**: Verify JSON response format matches expected structure
+- [ ] **Task 7.10**: Test redirect with curl: `curl -L http://localhost:8080/s/...`
+- [ ] **Task 7.11**: Test stats endpoint - do clicks increment?
+- [ ] **Task 7.12**: Test list endpoint - does it show all URLs?
+- [ ] **Task 7.13**: Test edge cases: empty URL, invalid URL, malformed JSON
+- [ ] **Task 7.14**: Test non-existent short code - does it return 404?
+- [ ] **Task 7.15**: Test wrong HTTP methods - are they rejected?
+- [ ] **Task 7.16**: Check server logs - are requests being logged?
+- [ ] **Task 7.17**: Test concurrent requests - use multiple browser tabs
+- [ ] **Task 7.18**: Verify thread safety - no race conditions with `go run -race .`
+
+### Phase 8: Refinement & Polish
+- [ ] **Task 8.1**: Add input validation error messages in HTML
+- [ ] **Task 8.2**: Improve CSS styling for better visual appeal
+- [ ] **Task 8.3**: Add loading spinner during API calls
+- [ ] **Task 8.4**: Add success/error notifications (toast messages)
+- [ ] **Task 8.5**: Make short codes more visually distinct (better encoding)
+- [ ] **Task 8.6**: Add URL validation on backend (check format, not just empty)
+- [ ] **Task 8.7**: Return meaningful HTTP status codes for all error cases
+- [ ] **Task 8.8**: Add CORS headers if testing from different origins
+- [ ] **Task 8.9**: Test with very long URLs - do they work?
+- [ ] **Task 8.10**: Add comments explaining complex logic
+
+### Bonus Challenges (Optional)
+- [ ] **Bonus 1**: Implement custom short codes (user-specified)
+- [ ] **Bonus 2**: Add expiration time for URLs
+- [ ] **Bonus 3**: Persist data to JSON file (save/load on startup/shutdown)
+- [ ] **Bonus 4**: Generate QR codes for short URLs
+- [ ] **Bonus 5**: Add analytics dashboard showing top URLs
+- [ ] **Bonus 6**: Implement URL validation by checking if URL is reachable
+- [ ] **Bonus 7**: Add rate limiting to prevent abuse
+- [ ] **Bonus 8**: Use a database (SQLite or PostgreSQL) instead of in-memory map
+- [ ] **Bonus 9**: Add user authentication for private URLs
+- [ ] **Bonus 10**: Deploy to cloud (Heroku, Railway, Fly.io)
+
+---
+
+## 🤔 Debugging Questions to Ask Yourself
+
+**HTTP & Web Concepts:**
+- What's the difference between GET and POST requests?
+- Why use JSON instead of plain text for API responses?
+- What HTTP status code should you return for "not found"?
+- How does an HTTP redirect work under the hood?
+
+**Concurrency & Thread Safety:**
+- Why isn't a Go map thread-safe by default?
+- When should you use `RLock()` vs `Lock()`?
+- What happens if you forget to unlock a mutex?
+- How does `defer` help with mutex unlocking?
+
+**Maps & Data Structures:**
+- What's the zero value of a map? Can you use it?
+- How do you check if a key exists in a map?
+- Can map keys be any type, or only certain types?
+- What's the difference between `map[string]int` and `map[string]*int`?
+
+**URL Shortening Logic:**
+- Why hash URLs instead of just using a counter?
+- What makes a good short code (length, characters)?
+- How do you handle collisions in short codes?
+- Why use Base62 instead of Base64 for short codes?
+
+**Error Handling:**
+- What errors can occur when decoding JSON?
+- How should you respond to invalid input?
+- What if the same URL is shortened twice?
+- Should incrementing clicks fail if the short code doesn't exist?
+
+---
+
 ## Project Structure
 
 ```
