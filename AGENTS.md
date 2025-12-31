@@ -16,17 +16,19 @@ This document provides critical information for AI coding agents (GitHub Copilot
 ## 🗂️ Repository Structure
 
 ```
-/Users/bruno/go-learning/
+go-learning/
 ├── golang-learning-projects.md    # Master guide (19,464 lines, all project details)
 ├── golang-learning-projects-improvements.md  # Enhancement ideas
 ├── check-later.txt                 # Notes and todos
 ├── projects/                       # Extracted project files
 │   ├── 01-basic/                  # Projects 1-6
 │   │   ├── README.md
-│   │   ├── project-01.md
-│   │   ├── project-02.md
-│   │   ├── ...
-│   │   └── project-06.md
+│   │   ├── project-01-cli-todo.md
+│   │   ├── project-02-url-shortener.md
+│   │   ├── project-03-file-organizer.md
+│   │   ├── project-04-process-monitor.md
+│   │   ├── project-05-log-analyzer.md
+│   │   └── project-06-system-monitor.md
 │   ├── 02-intermediate/           # Projects 7-18
 │   │   ├── README.md
 │   │   ├── project-07.md
@@ -52,6 +54,15 @@ This document provides critical information for AI coding agents (GitHub Copilot
 │       ├── project-37.md
 │       ├── ...
 │       └── project-54.md
+├── implementations/                # Separate Git repos for actual code
+│   ├── README.md
+│   ├── project-01-todo-cli/       # Individual Git repository
+│   ├── project-02-url-shortener/  # Individual Git repository
+│   └── ...                        # Each project is its own Git repository
+├── documentation/                  # Package documentation guides
+│   ├── go-flag-package-complete-guide.md
+│   ├── go-tabwriter-package-complete-guide.md
+│   └── go-net-http-package-complete-guide.md
 ├── guides/
 │   └── getting-started.md
 ├── README.md                       # Main navigation hub
@@ -279,6 +290,27 @@ Files to update when adding/modifying projects:
 - MASTER-INDEX.md (complete catalog)
 ```
 
+### Task 4: Working with Implementations
+
+```
+Structure:
+- Each implementation is a SEPARATE Git repository
+- Located in: implementations/ directory
+- GitHub repos: <username>/go-project-XX-<name>
+- Main repo contains project descriptions only
+- Implementation repos contain actual code
+
+Git workflow:
+1. Create project folder in implementations/
+2. Initialize git: git init
+3. Commit code: git add . && git commit -m "message"
+4. Create GitHub repo (via UI or gh CLI)
+5. Add remote: git remote add origin https://github.com/<username>/<repo-name>.git
+6. Push: git push -u origin main (or master)
+
+NOTE: Do NOT commit implementation folders to main repository
+```
+
 ### Task 4: Ensuring Consistency
 
 **Formatting Rules**:
@@ -304,7 +336,7 @@ Based on conversation history, the user:
 
 ## 📊 Progress Tracking
 
-### Completion Status (as of Dec 19, 2025)
+### Completion Status (as of Dec 31, 2025)
 
 **Fully Extracted (32/54 projects)**:
 - ✅ Projects 1-6 (Basic): Complete with full implementation guides
@@ -317,11 +349,22 @@ Based on conversation history, the user:
 - ⏳ Projects 33-36 (Specialized): Profiling, Payments, Cloud, Reflection
 - ⏳ Projects 37-54 (Bonus): Generics, Embed, Build Tags, CGO, Modules, Assembly, Patterns
 
+**Documentation Completed**:
+- ✅ `go-flag-package-complete-guide.md` (1427 lines)
+- ✅ `go-tabwriter-package-complete-guide.md`
+- ✅ `go-net-http-package-complete-guide.md` (1400+ lines)
+
+**Implementations in Progress**:
+- ✅ Project 1 (CLI Todo): Completed, Git repo created
+- 🔨 Project 2 (URL Shortener): In progress
+
 ### File Statistics
-- Total markdown files: 61 files
+- Total markdown files: 64+ files
 - Navigation files: 7 (README, indexes, guides)
 - Level README files: 6 (one per difficulty level)
 - Project files: 48 (32 complete, 16 remaining)
+- Documentation files: 3 (package guides)
+- Implementation READMEs: 1+
 
 ---
 
@@ -499,6 +542,6 @@ This repository follows a **project-based learning** approach:
 
 ---
 
-**Last Updated**: December 19, 2025  
+**Last Updated**: December 31, 2025  
 **Agent Version Compatibility**: All modern AI coding assistants  
 **Maintained By**: Human + AI collaboration

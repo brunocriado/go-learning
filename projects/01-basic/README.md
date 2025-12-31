@@ -15,48 +15,48 @@ Build a command-line todo app with file persistence. Learn Go basics, file I/O, 
 
 ---
 
-### [Project 2: Weather CLI Tool](project-02-weather-cli.md)
-**Time**: 10-15 hours | **Prerequisites**: Project 1
+### [Project 2: URL Shortener Service](project-02-url-shortener.md)
+**Time**: 12-18 hours | **Prerequisites**: Project 1
 
-Create a CLI tool that fetches weather data from external APIs. Master HTTP clients, JSON parsing, and API integration.
+Create a URL shortening service with HTTP server and web interface. Learn HTTP servers, routing, maps, and persistent storage.
 
-**Key Skills**: HTTP requests, REST APIs, JSON unmarshaling, environment variables
+**Key Skills**: HTTP server, routing, hash maps, JSON persistence, middleware basics
 
 ---
 
 ### [Project 3: File Organizer Tool](project-03-file-organizer.md)
-**Time**: 12-18 hours | **Prerequisites**: Project 1
-
-Build a tool that automatically organizes files by type, date, or custom rules. Learn filesystem operations and regex patterns.
-
-**Key Skills**: File system traversal, recursion, regex, file metadata, path manipulation
-
----
-
-### [Project 4: URL Shortener Web Service](project-04-url-shortener.md)
 **Time**: 15-20 hours | **Prerequisites**: Projects 1-2
 
-Create a URL shortening service with a simple web interface. Learn HTTP servers, routing, and in-memory data storage.
+Build a tool that automatically organizes files by type, date, or custom rules. Learn filesystem operations, goroutines, and file watching.
 
-**Key Skills**: HTTP server, routing, hash maps, HTML templates, middleware basics
-
----
-
-### [Project 5: RSS Aggregator](project-05-rss-aggregator.md)
-**Time**: 15-25 hours | **Prerequisites**: Projects 2, 4
-
-Build an RSS feed aggregator that fetches and displays content from multiple sources. Master XML parsing and goroutines.
-
-**Key Skills**: XML parsing, goroutines, channels, concurrency, scheduled tasks
+**Key Skills**: File system traversal, goroutines, channels, fsnotify, concurrent patterns
 
 ---
 
-### [Project 6: Markdown Blog Generator](project-06-markdown-blog.md)
-**Time**: 15-25 hours | **Prerequisites**: Projects 3, 4
+### [Project 4: System Process Monitor](project-04-process-monitor.md)
+**Time**: 12-18 hours | **Prerequisites**: Projects 1-3
 
-Create a static site generator that converts Markdown files into a blog. Learn template engines and static file generation.
+Create a process monitoring tool that displays CPU, memory usage, and process information. Learn `/proc` filesystem and system calls.
 
-**Key Skills**: Templates, Markdown parsing, static site generation, file processing
+**Key Skills**: Process information, `/proc` filesystem, real-time monitoring, system APIs
+
+---
+
+### [Project 5: Log File Analyzer & Tail](project-05-log-analyzer.md)
+**Time**: 10-15 hours | **Prerequisites**: Project 1
+
+Build a log analyzer that parses, filters, and tails log files. Implement `tail -f` functionality and log pattern matching.
+
+**Key Skills**: File I/O, regex patterns, file seeking, line-by-line reading, statistics
+
+---
+
+### [Project 6: System Resource Monitor](project-06-system-monitor.md)
+**Time**: 15-20 hours | **Prerequisites**: Project 4
+
+Create a comprehensive system monitor displaying CPU, memory, disk, and network metrics. Learn cross-platform system monitoring.
+
+**Key Skills**: System metrics, gopsutil library, cross-platform code, resource monitoring
 
 ---
 
@@ -79,15 +79,16 @@ After completing all Basic projects, you will:
 ```
 Project 1 (CLI Todo)
     ↓
-    ├→ Project 2 (Weather CLI)
-    ├→ Project 3 (File Organizer)
-    └→ Project 4 (URL Shortener)
+    ├→ Project 2 (URL Shortener)
+    ├→ Project 5 (Log Analyzer)
+    └→ Project 3 (File Organizer)
          ↓
-         ├→ Project 5 (RSS Aggregator)
-         └→ Project 6 (Markdown Blog)
+         └→ Project 4 (Process Monitor)
               ↓
-         BASIC COMPLETE ✓
-         Ready for Intermediate!
+              └→ Project 6 (System Monitor)
+                   ↓
+              BASIC COMPLETE ✓
+              Ready for Intermediate!
 ```
 
 ---
@@ -96,7 +97,7 @@ Project 1 (CLI Todo)
 
 - **Minimum**: 6 weeks (1 project per week)
 - **Recommended**: 8-12 weeks (with practice and refinement)
-- **Total Hours**: 85-125 hours
+- **Total Hours**: 75-105 hours
 
 ---
 
