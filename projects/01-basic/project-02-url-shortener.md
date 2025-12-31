@@ -118,21 +118,21 @@ Build a web service that creates short aliases for long URLs (like bit.ly). This
 Use this checklist to guide your implementation. Check off tasks as you complete them. **Remember**: These are guidance tasks, not solutions. Research and figure out the implementation details yourself.
 
 ### Phase 1: Project Setup & Foundation
-- [ ] **Task 1.1**: Create project directory and initialize Go module
-- [ ] **Task 1.2**: Create empty files: `main.go`, `shortener.go`, `handlers.go`
-- [ ] **Task 1.3**: Create `templates/` directory for HTML files
-- [ ] **Task 1.4**: Research the `net/http` package - how does Go handle HTTP?
-- [ ] **Task 1.5**: Research Go maps - syntax, initialization, and operations
-- [ ] **Task 1.6**: Research `sync.RWMutex` - why do we need thread safety?
-- [ ] **Task 1.7**: Understand the difference between `Lock()` and `RLock()`
+- [x] **Task 1.1**: Create project directory and initialize Go module
+- [x] **Task 1.2**: Create empty files: `main.go`, `shortener.go`, `handlers.go`
+- [x] **Task 1.3**: Create `templates/` directory for HTML files
+- [x] **Task 1.4**: Research the `net/http` package - how does Go handle HTTP?
+- [x] **Task 1.5**: Research Go maps - syntax, initialization, and operations
+- [x] **Task 1.6**: Research `sync.RWMutex` - why do we need thread safety?
+- [x] **Task 1.7**: Understand the difference between `Lock()` and `RLock()`
 
 ### Phase 2: Core Data Structures (`shortener.go`)
-- [ ] **Task 2.1**: Define `URLData` struct with all fields (ID, OriginalURL, ShortCode, Clicks, CreatedAt)
-- [ ] **Task 2.2**: Add JSON tags to each field for API responses
-- [ ] **Task 2.3**: Define `URLShortener` struct with map and mutex
-- [ ] **Task 2.4**: Research map initialization - what's the zero value? How to initialize?
-- [ ] **Task 2.5**: Implement `NewURLShortener()` constructor function
-- [ ] **Task 2.6**: Test map operations manually - insert, lookup, delete
+- [x] **Task 2.1**: Define `URLData` struct with all fields (ID, OriginalURL, ShortCode, Clicks, CreatedAt)
+- [x] **Task 2.2**: Add JSON tags to each field for API responses
+- [x] **Task 2.3**: Define `URLShortener` struct with map and mutex
+- [x] **Task 2.4**: Research map initialization - what's the zero value? How to initialize?
+- [x] **Task 2.5**: Implement `NewURLShortener()` constructor function
+- [x] **Task 2.6**: Test map operations manually - insert, lookup, delete
 - [ ] **Task 2.7**: Research hash functions - what's MD5? How to use `crypto/md5`?
 - [ ] **Task 2.8**: Implement `generateShortCode()` - hash URL and convert to short string
 - [ ] **Task 2.9**: Research Base62 encoding - why use it for short codes?
