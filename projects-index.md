@@ -2,13 +2,19 @@
 
 A comprehensive index of all 54 Golang learning projects, organized by difficulty level and skill focus.
 
+**📊 Current Status**: 18 of 54 projects fully documented (33%) | 36 projects with placeholder files
+
+**✅ Complete**: Projects 1-18 (Basic + Intermediate levels)
+**⏳ Placeholders**: Projects 19-54 (Advanced, Expert, Specialized, Bonus)
+**📚 Guides**: Observability guide and resources file now available!
+
 **Quick Links:**
 - [Complete Projects Index](#complete-projects-index)
   - [🟢 Basic Level (1-6) - Foundations](#-basic-level-1-6---foundations)
   - [🟡 Intermediate Level (7-18) - Backend Development](#-intermediate-level-7-18---backend-development)
   - [🔴 Advanced Level (19-21) - Systems Programming](#-advanced-level-19-21---systems-programming)
-  - [⚫ Expert Level (22-25) - Distributed Systems](#-expert-level-22-25---distributed-systems)
-  - [🟣 Specialized (26-35) - Production \& Cloud-Native](#-specialized-26-35---production--cloud-native)
+  - [⚫ Expert Level (22-30) - Distributed Systems](#-expert-level-22-30---distributed-systems)
+  - [🟣 Specialized (31-36) - Production \& Cloud-Native](#-specialized-31-36---production--cloud-native)
   - [🎁 Bonus Projects (36-54) - Advanced Go Features](#-bonus-projects-36-54---advanced-go-features)
     - [Language Features \& Advanced Topics](#language-features--advanced-topics)
     - [Distributed System Patterns](#distributed-system-patterns)
@@ -33,11 +39,11 @@ Master Go fundamentals, CLI development, file I/O, HTTP clients, and basic concu
 | # | Project | Key Concepts | Time | Prerequisites |
 |---|---------|-------------|------|---------------|
 | 1 | [CLI Todo App](projects/01-basic/project-01-cli-todo.md) | File I/O, JSON, CLI flags | 8-12h | None (Start here!) |
-| 2 | [Weather CLI](projects/01-basic/project-02-weather-cli.md) | HTTP clients, APIs, JSON parsing | 10-15h | Project 1 |
+| 2 | [URL Shortener](projects/01-basic/project-02-url-shortener.md) | HTTP server, Hash maps, Web basics | 10-15h | Project 1 |
 | 3 | [File Organizer](projects/01-basic/project-03-file-organizer.md) | Recursion, File system, Regex | 12-18h | Project 1 |
-| 4 | [URL Shortener](projects/01-basic/project-04-url-shortener.md) | HTTP server, Hash maps, Web basics | 15-20h | Projects 1-2 |
-| 5 | [RSS Aggregator](projects/01-basic/project-05-rss-aggregator.md) | XML parsing, Goroutines, Scheduling | 15-25h | Projects 2, 4 |
-| 6 | [Markdown Blog](projects/01-basic/project-06-markdown-blog.md) | Templates, Static sites, File processing | 15-25h | Projects 3, 4 |
+| 4 | [System Process Monitor](projects/01-basic/project-04-process-monitor.md) | OS APIs, /proc, Real-time updates | 15-20h | Projects 1-2 |
+| 5 | [Log Analyzer](projects/01-basic/project-05-log-analyzer.md) | Regex, Pattern matching, Reporting | 15-25h | Projects 1, 4 |
+| 6 | [System Monitor](projects/01-basic/project-06-system-monitor.md) | Metrics, Visualization, APIs | 20-30h | Projects 4-5 |
 
 **🎓 After Basic**: You can build CLI tools, simple web servers, and understand Go fundamentals.
 
@@ -56,9 +62,9 @@ Build production-ready backends with databases, real-time systems, and network s
 | 8 | [WebSocket Chat](projects/02-intermediate/project-08-websocket-chat.md) | WebSockets, Pub/Sub, Real-time | 20-30h | Project 7 |
 | 9 | [File Sync Tool](projects/02-intermediate/project-09-file-sync.md) | TCP, Protocols, Checksums | 25-35h | Project 7 |
 | 10 | [Web Scraper](projects/02-intermediate/project-10-web-scraper.md) | Concurrency, HTML parsing, Politeness | 25-35h | Projects 7-8 |
-| 11 | [Process Monitor](projects/02-intermediate/project-11-process-monitor.md) | OS APIs, /proc, Real-time updates | 15-20h | Projects 1-5 |
-| 12 | [Log Analyzer](projects/02-intermediate/project-12-log-analyzer.md) | Regex, Pattern matching, Reporting | 15-20h | Project 11 |
-| 13 | [System Monitor](projects/02-intermediate/project-13-system-monitor.md) | Metrics, Visualization, APIs | 20-30h | Projects 11-12 |
+| 11 | [System Monitor (Advanced)](projects/02-intermediate/project-11-system-monitor.md) | Metrics, TUI, Real-time data | 25-35h | Projects 1-5 |
+| 12 | [Process Manager](projects/02-intermediate/project-12-process-manager.md) | Process control, Signals, Supervision | 25-35h | Project 11 |
+| 13 | [Advanced Log Analyzer](projects/02-intermediate/project-13-log-analyzer.md) | Complex patterns, Statistics, Alerting | 30-40h | Projects 11-12 |
 | 14 | [Custom Shell](projects/02-intermediate/project-14-custom-shell.md) | Processes, exec, Pipes | 25-35h | Project 11 |
 | 15 | [Packet Sniffer](projects/02-intermediate/project-15-packet-sniffer.md) | Raw sockets, TCP/IP, Protocols | 30-40h | Project 14 |
 | 16 | [System Call Tracer](projects/02-intermediate/project-16-syscall-tracer.md) | ptrace, Syscalls, Debugging | 30-40h | Projects 14-15 |
@@ -88,8 +94,8 @@ Deep dive into operating system internals, kernel programming, and virtualizatio
 
 ---
 
-## ⚫ Expert Level (22-25) - Distributed Systems
-**Time**: 4-8 weeks each | **Total**: 16-32 weeks
+## ⚫ Expert Level (22-30) - Distributed Systems
+**Time**: 4-8 weeks each | **Total**: 36-72 weeks
 
 Design and implement distributed systems, complex patterns, and fault-tolerant services.
 
@@ -99,6 +105,11 @@ Design and implement distributed systems, complex patterns, and fault-tolerant s
 | 23 | [Testing Framework](projects/04-expert/project-23-testing-framework.md) | Testing, Benchmarking, Fuzzing, Mocks | 30-40h | Any 10 projects |
 | 24 | [Message Queue System](projects/04-expert/project-24-message-queue.md) | Event-driven, Pub/Sub, Async | 50-70h | Projects 7, 17 |
 | 25 | [Distributed Cache](projects/04-expert/project-25-distributed-cache.md) | Caching, Rate limiting, Algorithms | 40-60h | Project 17 |
+| 26 | [Load Balancer](projects/04-expert/project-26-placeholder.md) | Load balancing, Health checks, Discovery | 40-60h | Projects 7, 24 |
+| 27 | [Context Patterns](projects/04-expert/project-27-placeholder.md) | Context, Cancellation, Timeouts | 20-30h | Projects 7-10 |
+| 28 | [gRPC Microservices](projects/04-expert/project-28-placeholder.md) | gRPC, Protobuf, Streaming | 50-70h | Projects 7, 26 |
+| 29 | [Distributed Tracing](projects/04-expert/project-29-placeholder.md) | OpenTelemetry, Tracing, APM | 30-50h | Project 28 |
+| 30 | [Auth System](projects/04-expert/project-30-placeholder.md) | JWT, OAuth, RBAC, Security | 40-60h | Project 7 |
 
 **🎓 After Expert**: You can design distributed systems, implement complex patterns, build fault-tolerant services.
 
@@ -106,23 +117,19 @@ Design and implement distributed systems, complex patterns, and fault-tolerant s
 
 ---
 
-## 🟣 Specialized (26-35) - Production & Cloud-Native
-**Time**: 2-6 weeks each | **Total**: 24-48 weeks
+## 🟣 Specialized (31-36) - Production & Cloud-Native
+**Time**: 2-6 weeks each | **Total**: 12-36 weeks
 
 Deploy to production, build cloud-native apps, and master DevOps practices.
 
 | # | Project | Key Concepts | Time | Prerequisites |
 |---|---------|-------------|------|---------------|
-| 26 | [Load Balancer](projects/05-specialized/project-26-load-balancer.md) | Load balancing, Health checks, Discovery | 40-60h | Projects 7, 24 |
-| 27 | [Context Patterns](projects/05-specialized/project-27-context-patterns.md) | Context, Cancellation, Timeouts | 20-30h | Projects 7-10 |
-| 28 | [gRPC Microservices](projects/05-specialized/project-28-grpc-microservices.md) | gRPC, Protobuf, Streaming | 50-70h | Projects 7, 26 |
-| 29 | [Distributed Tracing](projects/05-specialized/project-29-distributed-tracing.md) | OpenTelemetry, Tracing, APM | 30-50h | Project 28 |
-| 30 | [Auth System](projects/05-specialized/project-30-auth-system.md) | JWT, OAuth, RBAC, Security | 40-60h | Project 7 |
-| 31 | [CI/CD Pipeline](projects/05-specialized/project-31-cicd-pipeline.md) | GitHub Actions, Testing, Deployment | 30-50h | Project 23 |
-| 32 | [Kubernetes Operator](projects/05-specialized/project-32-kubernetes-operator.md) | K8s API, Controllers, CRDs | 60-90h | Projects 21, 28 |
-| 33 | [Profiling & Optimization](projects/05-specialized/project-33-profiling-optimization.md) | pprof, Benchmarks, Memory | 30-40h | Projects 7, 23 |
-| 34 | [Payment Integration](projects/05-specialized/project-34-payment-processing.md) | Stripe API, Webhooks, Idempotency | 40-60h | Projects 7, 30 |
-| 35 | [Multi-Cloud Storage](projects/05-specialized/project-35-multi-cloud-storage.md) | S3, GCS, Azure, Abstractions | 35-50h | Projects 7, 9 |
+| 31 | [CI/CD Pipeline](projects/05-specialized/project-31-placeholder.md) | GitHub Actions, Testing, Deployment | 30-50h | Project 23 |
+| 32 | [Kubernetes Operator](projects/05-specialized/project-32-placeholder.md) | K8s API, Controllers, CRDs | 60-90h | Projects 19, 28 |
+| 33 | [Profiling & Optimization](projects/05-specialized/project-33-placeholder.md) | pprof, Benchmarks, Memory | 30-40h | Projects 7, 23 |
+| 34 | [Payment Integration](projects/05-specialized/project-34-placeholder.md) | Stripe API, Webhooks, Idempotency | 40-60h | Projects 7, 30 |
+| 35 | [Multi-Cloud Storage](projects/05-specialized/project-35-placeholder.md) | S3, GCS, Azure, Abstractions | 35-50h | Projects 7, 9 |
+| 36 | [Reflection Deep Dive](projects/05-specialized/project-36-placeholder.md) | Reflection, Type inspection, Dynamic code | 20-30h | Projects 7, 22 |
 
 **🎓 After Specialized**: You can deploy to production, work in DevOps, handle real-world integrations, optimize at scale.
 
@@ -218,7 +225,8 @@ Master advanced Go features, architectural patterns, and third-party integration
 - **[Back to README](README.md)** for overview and motivation
 - **[Getting Started Guide](getting-started.md)** for setup and paths
 - **[Start Project 1](projects/01-basic/project-01-cli-todo.md)** and begin your journey
-- **[View Guides](guides/)** for observability, security, and deployment
+- **[Observability Guide](guides/observability-monitoring.md)** for logging, metrics, and tracing
+- **[Learning Resources](resources.md)** for books, courses, and community
 
 ---
 
