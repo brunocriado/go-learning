@@ -197,6 +197,58 @@ Each project file must contain **300-800 lines** including:
 - **Expert/Specialized (22-36)**: 70-100 tasks total
 - **Bonus Projects (37-54)**: 40-60 tasks total (more focused)
 
+### When Creating Documentation Guides
+
+**Documentation Philosophy**: Teach the **why** and **how**, not just the **what**.
+
+**DO:**
+- ✅ **Provide theoretical foundations**: Explain underlying concepts before showing code
+- ✅ **Add historical context**: Why does this feature exist? What problem does it solve?
+- ✅ **Explain design decisions**: Why did Go choose this approach over alternatives?
+- ✅ **Include visual explanations**: Memory layouts, byte sequences, data flow diagrams
+- ✅ **Show the reasoning**: Why does this solution work? What happens under the hood?
+- ✅ **Compare alternatives**: When to use X vs Y, with detailed trade-offs
+- ✅ **Provide real-world context**: Where is this used in actual applications?
+- ✅ **Explain common pitfalls**: Why do they happen? What's the underlying cause?
+
+**DON'T:**
+- ❌ Only provide code examples without explanation
+- ❌ Skip the "why" and jump to "how"
+- ❌ Assume concepts are self-evident from code alone
+- ❌ Omit historical or design context
+- ❌ Provide shallow explanations ("it works this way because it does")
+
+**Example Quality Standard:**
+
+Instead of:
+```markdown
+## Rune Type
+A rune is an int32 representing a Unicode code point.
+```
+
+Provide:
+```markdown
+## Rune Type
+
+**Definition**: A rune is an alias for int32 that represents a Unicode code point.
+
+**Why 32 bits?** Unicode defines 1,112,064 possible code points:
+- uint8: only 256 values ❌
+- uint16: only 65,536 values ❌  
+- int32: 2+ billion values ✅
+
+**Why signed (int32) vs unsigned (uint32)?**
+Historical compatibility with C's wchar_t...
+
+**What problem does this solve?**
+Before Unicode, ASCII only supported 128 characters (English only)...
+```
+
+**Documentation Targets:**
+- **Length**: 700-1,500 lines for comprehensive package guides
+- **Theory-to-example ratio**: 40% theory/context, 60% examples/patterns
+- **Depth**: Explain 2-3 levels deep (not just surface concepts)
+
 ---
 
 ## 📖 Source Material

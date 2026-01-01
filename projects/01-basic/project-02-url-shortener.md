@@ -133,16 +133,16 @@ Use this checklist to guide your implementation. Check off tasks as you complete
 - [x] **Task 2.4**: Research map initialization - what's the zero value? How to initialize?
 - [x] **Task 2.5**: Implement `NewURLShortener()` constructor function
 - [x] **Task 2.6**: Test map operations manually - insert, lookup, delete
-- [ ] **Task 2.7**: Research hash functions - what's MD5? How to use `crypto/md5`?
-- [ ] **Task 2.8**: Implement `generateShortCode()` - hash URL and convert to short string
-- [ ] **Task 2.9**: Research Base62 encoding - why use it for short codes?
-- [ ] **Task 2.10**: Implement `base62Encode()` - convert number to alphanumeric string
-- [ ] **Task 2.11**: Test short code generation - are codes unique? URL-safe?
-- [ ] **Task 2.12**: Implement `Shorten()` method with mutex locking
-- [ ] **Task 2.13**: Handle collision case - what if short code already exists?
-- [ ] **Task 2.14**: Implement `Resolve()` method with read lock
-- [ ] **Task 2.15**: What should `Resolve()` return if short code doesn't exist?
-- [ ] **Task 2.16**: Implement `IncrementClick()` - how to safely update counter?
+- [x] **Task 2.7**: Research hash functions - what's MD5? How to use `crypto/md5`?
+- [x] **Task 2.8**: Implement `generateShortCode()` - hash URL and convert to short string
+- [x] **Task 2.9**: Research Base62 encoding - why use it for short codes?
+- [x] **Task 2.10**: Implement `base62Encode()` - convert number to alphanumeric string
+- [x] **Task 2.11**: Test short code generation - are codes unique? URL-safe?
+- [x] **Task 2.12**: Implement `Shorten()` method with mutex locking
+- [x] **Task 2.13**: Handle collision case - what if short code already exists?
+- [x] **Task 2.14**: Implement `Resolve()` method with read lock
+- [x] **Task 2.15**: What should `Resolve()` return if short code doesn't exist?
+- [x] **Task 2.16**: Implement `IncrementClick()` - how to safely update counter?
 - [ ] **Task 2.17**: Implement `GetStats()` method to return URL data
 - [ ] **Task 2.18**: Implement `GetAll()` method - how to convert map to slice?
 - [ ] **Task 2.19**: Test all methods with sample data
