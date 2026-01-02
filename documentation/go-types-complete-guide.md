@@ -611,19 +611,6 @@ Each type serves its purpose!
 
 ---
 
-## String vs []byte vs []rune
-
-### Comparison Table
-
-| Aspect | `string` | `[]byte` | `[]rune` |
-|--------|----------|----------|----------|
-| **Mutability** | Immutable | Mutable | Mutable |
-| **Element Type** | byte (uint8) | byte (uint8) | rune (int32) |
-| **Indexing Returns** | byte | byte | rune |
-| **Length** | Bytes | Bytes | Characters |
-| **Memory** | Efficient | Efficient | 4× string size |
-| **Use Case** | Text, keys | Binary data, I/O | Character manipulation |
-
 ### Detailed Examples
 
 #### String: Immutable Byte Sequence
@@ -800,33 +787,7 @@ for i, ch := range s {
 - **index**: byte position (not character position!)
 - **value**: rune (decoded character)
 
-### Pattern 3: Reversing a String
 
-```go
-// ❌ WRONG - reverses bytes (corrupts UTF-8)
-func reverseBad(s string) string {
-    b := []byte(s)
-    for i, j := 0, len(b)-1; i < j; i, j = i+1, j-1 {
-        b[i], b[j] = b[j], b[i]
-    }
-    return string(b)
-}
-
-fmt.Println(reverseBad("Hello"))    // "olleH" ✅
-fmt.Println(reverseBad("Hello, 世界"))  // "�界�世 ,olleH" ❌ CORRUPTED!
-
-// ✅ RIGHT - reverses characters
-func reverseGood(s string) string {
-    runes := []rune(s)
-    for i, j := 0, len(runes)-1; i < j; i, j = i+1, j-1 {
-        runes[i], runes[j] = runes[j], runes[i]
-    }
-    return string(runes)
-}
-
-fmt.Println(reverseGood("Hello"))    // "olleH" ✅
-fmt.Println(reverseGood("Hello, 世界"))  // "界世 ,olleH" ✅ CORRECT!
-```
 
 ### Pattern 4: Substring by Character Position
 

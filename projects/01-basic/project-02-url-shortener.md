@@ -143,16 +143,16 @@ Use this checklist to guide your implementation. Check off tasks as you complete
 - [x] **Task 2.14**: Implement `Resolve()` method with read lock
 - [x] **Task 2.15**: What should `Resolve()` return if short code doesn't exist?
 - [x] **Task 2.16**: Implement `IncrementClick()` - how to safely update counter?
-- [ ] **Task 2.17**: Implement `GetStats()` method to return URL data
-- [ ] **Task 2.18**: Implement `GetAll()` method - how to convert map to slice?
-- [ ] **Task 2.19**: Test all methods with sample data
+- [x] **Task 2.17**: Implement `GetStats()` method to return URL data
+- [x] **Task 2.18**: Implement `GetAll()` method - how to convert map to slice?
+- [x] **Task 2.19**: Test all methods with sample data
 
 ### Phase 3: HTTP Request/Response Structures (`handlers.go`)
-- [ ] **Task 3.1**: Define `ShortenRequest` struct with URL field
-- [ ] **Task 3.2**: Define `ShortenResponse` struct with ShortCode and ShortURL
-- [ ] **Task 3.3**: Define `ErrorResponse` struct for error messages
-- [ ] **Task 3.4**: Research `http.ResponseWriter` - what methods does it have?
-- [ ] **Task 3.5**: Research `*http.Request` - how to access body, method, headers?
+- [x] **Task 3.1**: Define `ShortenRequest` struct with URL field
+- [x] **Task 3.2**: Define `ShortenResponse` struct with ShortCode and ShortURL
+- [x] **Task 3.3**: Define `ErrorResponse` struct for error messages
+- [x] **Task 3.4**: Research `http.ResponseWriter` - what methods does it have?
+- [x] **Task 3.5**: Research `*http.Request` - how to access body, method, headers?
 - [ ] **Task 3.6**: Implement `respondWithJSON()` helper function
 - [ ] **Task 3.7**: What headers need to be set for JSON responses?
 - [ ] **Task 3.8**: Implement `respondWithError()` helper function
