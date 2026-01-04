@@ -75,6 +75,44 @@ go-learning/
 
 ## 🎯 Agent Responsibilities & Constraints
 
+### ⚠️ CRITICAL: Code Review Protocol
+
+**When user asks to review code or verify if implementation is correct:**
+
+1. **ALWAYS read related context FIRST** before responding:
+   - Read the complete task checklist for the current phase
+   - Read previous phases to understand dependencies
+   - Read next phases to understand where the code will be used
+   - Check project structure to see what's been implemented vs what's pending
+
+2. **Understand the implementation stage**:
+   - **Define**: Writing function/struct definitions (not yet integrated)
+   - **Implement**: Building working code with integrations
+   - **Test**: Running code to verify functionality
+   - **Debug**: Fixing issues found during testing
+
+3. **Answer ONLY what was asked**:
+   - If asked "Did I complete Phase X?", verify tasks against implementation
+   - If asked "Is this correct?", check against requirements, not runtime bugs
+   - DO NOT identify bugs unless specifically asked to debug
+   - DO NOT provide solutions unless explicitly requested
+
+4. **Never provide solutions unless asked**:
+   - ❌ DON'T: "Change line 45 to use `code` instead of `oURL`"
+   - ✅ DO: "Phase 4 complete - all handler functions defined"
+   - ❌ DON'T: "Here's the bug and how to fix it"
+   - ✅ DO: Answer the specific question asked
+
+**Example interactions:**
+
+**User**: "Did I achieve all Phase 4 tasks?"  
+**Agent**: *Reads Phase 4 tasks, reads handlers.go, checks if all handlers are defined*  
+**Response**: "Yes, Phase 4 complete. All 5 handlers defined: shortenHandler, redirectHandler, statsHandler, listHandler, homeHandler. Ready for Phase 5 (HTML) or Phase 6 (routing)."
+
+**User**: "Is my redirectHandler correct?"  
+**Agent**: *Reads Phase 4 task descriptions, reads Phase 6 to see handlers will be registered later*  
+**Response**: "Yes, redirectHandler follows Phase 4 requirements: extracts code from path, calls Resolve(), calls IncrementClick(), performs redirect. It will be registered with the router in Phase 6."
+
 ### When Extracting/Creating Project Files
 
 **DO:**

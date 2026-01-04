@@ -153,61 +153,61 @@ Use this checklist to guide your implementation. Check off tasks as you complete
 - [x] **Task 3.3**: Define `ErrorResponse` struct for error messages
 - [x] **Task 3.4**: Research `http.ResponseWriter` - what methods does it have?
 - [x] **Task 3.5**: Research `*http.Request` - how to access body, method, headers?
-- [ ] **Task 3.6**: Implement `respondWithJSON()` helper function
-- [ ] **Task 3.7**: What headers need to be set for JSON responses?
-- [ ] **Task 3.8**: Implement `respondWithError()` helper function
-- [ ] **Task 3.9**: Test JSON encoding manually with sample data
+- [x] **Task 3.6**: Implement `respondWithJSON()` helper function
+- [x] **Task 3.7**: What headers need to be set for JSON responses?
+- [x] **Task 3.8**: Implement `respondWithError()` helper function
+- [x] **Task 3.9**: Test JSON encoding manually with sample data
 
 ### Phase 4: HTTP Handlers Implementation (`handlers.go`)
-- [ ] **Task 4.1**: Implement `shortenHandler()` - parse POST request body
-- [ ] **Task 4.2**: How to decode JSON from `r.Body`? Research `json.NewDecoder`
-- [ ] **Task 4.3**: Validate the incoming URL - is it empty? Valid format?
-- [ ] **Task 4.4**: Research URL validation - `strings.HasPrefix()` or regex?
-- [ ] **Task 4.5**: Call `Shorten()` and construct response with full short URL
-- [ ] **Task 4.6**: How to build the full short URL? Combine host + path + shortCode
-- [ ] **Task 4.7**: Handle errors in `shortenHandler` - what status codes to return?
-- [ ] **Task 4.8**: Implement `redirectHandler()` - extract short code from URL path
-- [ ] **Task 4.9**: Research `http.Redirect()` - what status code for permanent redirect?
-- [ ] **Task 4.10**: What to do if short code doesn't exist in `redirectHandler`?
-- [ ] **Task 4.11**: Call `IncrementClick()` before redirecting
-- [ ] **Task 4.12**: Implement `statsHandler()` - return URLData as JSON
-- [ ] **Task 4.13**: Implement `listHandler()` - return all URLs as JSON array
-- [ ] **Task 4.14**: Implement `homeHandler()` - serve HTML file
-- [ ] **Task 4.15**: Research `http.ServeFile()` vs `html/template` package
-- [ ] **Task 4.16**: Handle HTTP method validation - reject wrong methods gracefully
+- [x] **Task 4.1**: Implement `shortenHandler()` - parse POST request body
+- [x] **Task 4.2**: How to decode JSON from `r.Body`? Research `json.NewDecoder`
+- [x] **Task 4.3**: Validate the incoming URL - is it empty? Valid format?
+- [x] **Task 4.4**: Research URL validation - `strings.HasPrefix()` or regex?
+- [x] **Task 4.5**: Call `Shorten()` and construct response with full short URL
+- [x] **Task 4.6**: How to build the full short URL? Combine host + path + shortCode
+- [x] **Task 4.7**: Handle errors in `shortenHandler` - what status codes to return?
+- [x] **Task 4.8**: Implement `redirectHandler()` - extract short code from URL path
+- [x] **Task 4.9**: Research `http.Redirect()` - what status code for permanent redirect?
+- [x] **Task 4.10**: What to do if short code doesn't exist in `redirectHandler`?
+- [x] **Task 4.11**: Call `IncrementClick()` before redirecting
+- [x] **Task 4.12**: Implement `statsHandler()` - return URLData as JSON
+- [x] **Task 4.13**: Implement `listHandler()` - return all URLs as JSON array
+- [x] **Task 4.14**: Implement `homeHandler()` - serve HTML file
+- [x] **Task 4.15**: Research `http.ServeFile()` vs `html/template` package
+- [x] **Task 4.16**: Handle HTTP method validation - reject wrong methods gracefully
 
 ### Phase 5: HTML Frontend (`templates/index.html`)
-- [ ] **Task 5.1**: Create basic HTML structure with form
-- [ ] **Task 5.2**: Add input field for URL with proper type and validation
-- [ ] **Task 5.3**: Add submit button
-- [ ] **Task 5.4**: Add div to display results
-- [ ] **Task 5.5**: Research JavaScript `fetch()` API for making HTTP requests
-- [ ] **Task 5.6**: Implement form submission with `preventDefault()`
-- [ ] **Task 5.7**: Send POST request to `/api/shorten` with JSON body
-- [ ] **Task 5.8**: Parse JSON response and display short URL
-- [ ] **Task 5.9**: Handle and display errors from API
-- [ ] **Task 5.10**: Add "Copy to Clipboard" button functionality
-- [ ] **Task 5.11**: Research `navigator.clipboard.writeText()` API
-- [ ] **Task 5.12**: Add basic CSS styling for better UX
-- [ ] **Task 5.13**: Make URL input clickable (link) in result display
+- [x] **Task 5.1**: Create basic HTML structure with form
+- [x] **Task 5.2**: Add input field for URL with proper type and validation
+- [x] **Task 5.3**: Add submit button
+- [x] **Task 5.4**: Add div to display results
+- [x] **Task 5.5**: Research JavaScript `fetch()` API for making HTTP requests
+- [x] **Task 5.6**: Implement form submission with `preventDefault()`
+- [x] **Task 5.7**: Send POST request to `/api/shorten` with JSON body
+- [x] **Task 5.8**: Parse JSON response and display short URL
+- [x] **Task 5.9**: Handle and display errors from API
+- [x] **Task 5.10**: Add "Copy to Clipboard" button functionality
+- [x] **Task 5.11**: Research `navigator.clipboard.writeText()` API
+- [x] **Task 5.12**: Add basic CSS styling for better UX
+- [x] **Task 5.13**: Make URL input clickable (link) in result display
 
 ### Phase 6: Server Setup & Routing (`main.go`)
-- [ ] **Task 6.1**: Research `http.ServeMux` - what is a router?
-- [ ] **Task 6.2**: Create `URLShortener` instance in main()
-- [ ] **Task 6.3**: Create `http.ServeMux` for routing
-- [ ] **Task 6.4**: Register route: `/` -> homeHandler
-- [ ] **Task 6.5**: Register route: `/api/shorten` -> shortenHandler
-- [ ] **Task 6.6**: Register route: `/api/list` -> listHandler
-- [ ] **Task 6.7**: Register route: `/s/` -> redirectHandler (prefix match)
-- [ ] **Task 6.8**: Register route: `/stats/` -> statsHandler
-- [ ] **Task 6.9**: Research how `HandleFunc()` works - method vs function
-- [ ] **Task 6.10**: How to pass methods as handler functions?
-- [ ] **Task 6.11**: Implement `loggingMiddleware()` wrapper function
-- [ ] **Task 6.12**: Research middleware pattern - how to wrap handlers?
-- [ ] **Task 6.13**: Log each request: method, path, duration
-- [ ] **Task 6.14**: Research `time.Since()` for measuring request duration
-- [ ] **Task 6.15**: Start server with `http.ListenAndServe()`
-- [ ] **Task 6.16**: What happens if server fails to start? Handle error
+- [x] **Task 6.1**: Research `http.ServeMux` - what is a router?
+- [x] **Task 6.2**: Create `URLShortener` instance in main()
+- [x] **Task 6.3**: Create `http.ServeMux` for routing
+- [x] **Task 6.4**: Register route: `/` -> homeHandler
+- [x] **Task 6.5**: Register route: `/api/shorten` -> shortenHandler
+- [x] **Task 6.6**: Register route: `/api/list` -> listHandler
+- [x] **Task 6.7**: Register route: `/s/` -> redirectHandler (prefix match)
+- [x] **Task 6.8**: Register route: `/stats/` -> statsHandler
+- [x] **Task 6.9**: Research how `HandleFunc()` works - method vs function
+- [x] **Task 6.10**: How to pass methods as handler functions?
+- [x] **Task 6.11**: Implement `loggingMiddleware()` wrapper function
+- [x] **Task 6.12**: Research middleware pattern - how to wrap handlers?
+- [x] **Task 6.13**: Log each request: method, path, duration
+- [x] **Task 6.14**: Research `time.Since()` for measuring request duration
+- [x] **Task 6.15**: Start server with `http.ListenAndServe()`
+- [x] **Task 6.16**: What happens if server fails to start? Handle error
 
 ### Phase 7: Testing & Debugging
 - [ ] **Task 7.1**: Build the project - fix any compilation errors

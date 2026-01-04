@@ -924,6 +924,78 @@ mux.HandleFunc("/path", myFunc)
 
 **HandleFunc is syntactic sugar** for converting a function to a Handler.
 
+### Methods vs Functions as Handlers
+
+**The Problem**: How do you register handlers that need access to shared state (database, cache, config)?
+
+**Solution 1: Standalone Function (No State)**
+
+```go
+// ❌ Cannot access any shared data
+func myHandler(w http.ResponseWriter, r *http.Request) {
+    w.Write([]byte("Hello"))
+}
+
+mux.HandleFunc("/hello", myHandler)
+```
+
+**Solution 2: Method on Struct (With State)**
+
+```go
+// ✅ Has access to all struct fields and methods
+type Server struct {
+    db    *sql.DB
+    cache *Cache
+}
+
+func (s *Server) usersHandler(w http.ResponseWriter, r *http.Request) {
+    // Can access s.db, s.cache, call other methods on s
+    users := s.db.QueryUsers()  // Access to database
+    fmt.Fprintf(w, "%v", users)
+}
+
+// Register the method - you MUST have an instance
+server := &Server{db: myDB, cache: myCache}
+mux.HandleFunc("/users", server.usersHandler)
+//                        ^^^^^^^^ method on instance
+```
+
+**Key Difference:**
+- **Function**: Stateless, no access to shared data
+- **Method**: Stateful, has access to struct's fields and other methods via receiver
+
+**Why Methods Matter for Real Applications:**
+
+Most web applications need shared state:
+- Database connections
+- Configuration
+- Caches
+- Session stores
+- Business logic in other methods
+
+**Example: URL Shortener**
+
+```go
+type URLShortener struct {
+    urls map[string]*URLData
+    mu   sync.RWMutex
+}
+
+// Method has access to us.urls and us.mu
+func (us *URLShortener) shortenHandler(w http.ResponseWriter, r *http.Request) {
+    shortCode := us.Shorten(url)  // ✅ Can call other methods
+    // Can access us.urls, us.mu
+}
+
+// Registration requires an instance
+shortener := NewURLShortener()
+mux.HandleFunc("/api/shorten", shortener.shortenHandler)
+```
+
+**When to Use Each:**
+- **Standalone Functions**: Simple handlers, no shared state (rare in production)
+- **Methods on Struct**: Production apps with databases, caching, business logic (common)
+
 ### Closure-based Handlers
 
 ```go
